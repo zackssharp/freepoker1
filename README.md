@@ -43,6 +43,7 @@ Neon over its HTTP driver, so there is no connection to keep warm.
 | `npm run db:migrate`  | Applies pending migrations to `DATABASE_URL`.                    |
 | `npm run db:push`     | Pushes the schema straight to the database, skipping migration files. Handy while iterating; not for production. |
 | `npm run db:studio`   | Opens Drizzle Studio against your database.                      |
+| `npm run db:status`   | Prints which tables exist and how many rows they hold.           |
 
 The initial migration is already committed, so a fresh database only needs
 `npm run db:migrate`.
@@ -122,6 +123,13 @@ npm run lint
   exactly, and no card is ever dealt twice.
 - `test:view` plays from the human seat and asserts the payload sent to the
   browser never contains the deck or a concealed hole card.
+
+`npm run test:db` is separate because it needs a real database. It plays a hand
+through the same modules the Server Actions use, writes it, reads it back
+through the real queries, and then deletes everything it created — covering
+what the offline harnesses cannot: jsonb round-tripping of `TableState`,
+`text[]` columns, the pg enums, and the idempotent stats upsert. Point
+`DATABASE_URL` at a scratch database rather than one with real players in it.
 
 The engine harness also reports table statistics — flop-seen rate, showdown
 rate, average pot — which is the quickest way to tell whether a change to the

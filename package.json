@@ -15,7 +15,9 @@
     "test:cards": "tsx scripts/verify-evaluator.ts",
     "test:engine": "tsx scripts/simulate.ts 600",
     "test:view": "tsx scripts/verify-view.ts 200",
-    "test": "npm run test:cards && npm run test:engine && npm run test:view"
+    "test": "npm run test:cards && npm run test:engine && npm run test:view",
+    "db:status": "tsx scripts/db-status.ts",
+    "test:db": "tsx --conditions=react-server scripts/verify-db.ts"
   },
   "dependencies": {
     "@base-ui/react": "^1.7.0",

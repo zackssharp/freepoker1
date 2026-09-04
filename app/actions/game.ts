@@ -1,16 +1,10 @@
 "use server";
 
-import { and, eq, sql } from "drizzle-orm";
+import { and, eq } from "drizzle-orm";
 import { redirect } from "next/navigation";
 
-import {
-  db,
-  games,
-  handPlayers,
-  hands,
-  playerStats,
-  type Game,
-} from "@/db";
+import { db, games, type Game } from "@/db";
+import { recordCompletedHand, saveGameState } from "@/lib/game-store";
 import { playBotTurns } from "@/lib/poker/autoplay";
 import {
   applyAction,
@@ -81,96 +75,6 @@ function buildSeats(displayName: string, opponentCount: number): SeatConfig[] {
       profileId: bot.profileId,
     })),
   ];
-}
-
-/**
- * Writes the hand history for the hand that just finished. Idempotent: the
- * unique index on (game_id, hand_number) means a retried action cannot double
- * count a player's stats.
- */
-async function recordCompletedHand(
-  game: Pick<Game, "id" | "userId">,
-  state: TableState,
-): Promise<void> {
-  const summary = state.lastHand;
-  if (!summary) return;
-
-  const inserted = await db
-    .insert(hands)
-    .values({
-      gameId: game.id,
-      handNumber: summary.handNumber,
-      board: summary.board,
-      potSize: summary.potSize,
-      wentToShowdown: summary.wentToShowdown,
-    })
-    .onConflictDoNothing()
-    .returning({ id: hands.id });
-
-  const handRow = inserted[0];
-  if (!handRow) return; // Already recorded by an earlier attempt.
-
-  const hero = summary.players.find(
-    (player) => player.seatId === HERO_SEAT_ID,
-  );
-  const heroWon = hero?.result === "won" || hero?.result === "chopped";
-
-  await Promise.all([
-    db.insert(handPlayers).values(
-      summary.players.map((player) => ({
-        handId: handRow.id,
-        seatId: player.seatId,
-        name: player.name,
-        isHuman: player.kind === "human",
-        holeCards: player.holeCards,
-        startingStack: player.startingStack,
-        endingStack: player.endingStack,
-        net: player.net,
-        result: player.result,
-        handLabel: player.handLabel,
-      })),
-    ),
-    db
-      .insert(playerStats)
-      .values({
-        userId: game.userId,
-        handsPlayed: 1,
-        handsWon: heroWon ? 1 : 0,
-        showdownsWon: heroWon && summary.wentToShowdown ? 1 : 0,
-        biggestPot: heroWon ? summary.potSize : 0,
-        netProfit: hero?.net ?? 0,
-      })
-      .onConflictDoUpdate({
-        target: playerStats.userId,
-        set: {
-          handsPlayed: sql`${playerStats.handsPlayed} + 1`,
-          handsWon: sql`${playerStats.handsWon} + ${heroWon ? 1 : 0}`,
-          showdownsWon: sql`${playerStats.showdownsWon} + ${
-            heroWon && summary.wentToShowdown ? 1 : 0
-          }`,
-          biggestPot: sql`GREATEST(${playerStats.biggestPot}, ${
-            heroWon ? summary.potSize : 0
-          })`,
-          netProfit: sql`${playerStats.netProfit} + ${hero?.net ?? 0}`,
-          updatedAt: new Date(),
-        },
-      }),
-  ]);
-}
-
-async function saveState(gameId: string, state: TableState): Promise<void> {
-  const finished = state.phase === "table-complete";
-
-  await db
-    .update(games)
-    .set({
-      state,
-      handsPlayed: state.handNumber,
-      status: finished ? "finished" : "active",
-      endedAt: finished ? new Date() : null,
-      updatedAt: new Date(),
-    })
-    .where(eq(games.id, gameId));
 }
 
 /** Creates a table, deals the first hand, and sends the player to it. */
@@ -265,7 +169,7 @@ export async function submitPlayerAction(
 
   state = playBotTurns(state, HERO_SEAT_ID);
 
-  await saveState(gameId, state);
+  await saveGameState(gameId, state);
   if (state.lastHand) {
     await recordCompletedHand({ id: game.id, userId: game.userId }, state);
   }
@@ -292,7 +196,7 @@ export async function dealNextHandAction(
   let state = startHand(game.state);
   state = playBotTurns(state, HERO_SEAT_ID);
 
-  await saveState(gameId, state);
+  await saveGameState(gameId, state);
   if (state.lastHand) {
     await recordCompletedHand({ id: game.id, userId: game.userId }, state);
   }
