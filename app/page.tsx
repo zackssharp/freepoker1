@@ -1,11 +1,11 @@
-import { ArrowRight, Brain, Layers, Trophy } from "lucide-react";
+import { ArrowRight, Brain, Layers, Spade, Trophy } from "lucide-react";
 import Link from "next/link";
 
 import { NewTableForm } from "@/components/new-table-form";
 import { Button } from "@/components/ui/button";
 import { getActiveGameId, getLeaderboard } from "@/lib/queries";
 import { getCurrentUser } from "@/lib/session";
-import { formatChips, formatSigned, hueFromString } from "@/lib/table-config";
+import { formatSigned, hueFromString } from "@/lib/table-config";
 
 export default async function LobbyPage() {
   const user = await getCurrentUser();
@@ -15,31 +15,40 @@ export default async function LobbyPage() {
   ]);
 
   return (
-    <div className="mx-auto grid w-full max-w-6xl flex-1 gap-8 px-4 py-10 lg:grid-cols-[1.1fr_1fr] lg:gap-12 lg:py-16">
-      <section className="flex flex-col justify-center gap-6">
+    <div className="lobby-shell mx-auto grid w-full max-w-6xl flex-1 gap-8 px-4 py-8 sm:px-6 lg:grid-cols-[1.15fr_1fr] lg:gap-14 lg:py-14">
+      <section className="flex min-w-0 flex-col gap-7">
         <div className="flex flex-col gap-4">
           <span className="border-primary/30 bg-primary/10 text-primary w-fit rounded-full border px-3 py-1 text-xs font-medium">
-            No signup · No chips to buy
+            FREE TO PLAY · ALWAYS
           </span>
-          <h1 className="text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
-            Texas Hold&apos;em against bots that actually think.
+          <h1 className="text-5xl leading-[1.05] font-semibold tracking-[-0.05em] text-balance sm:text-6xl">
+            Good hands. Good practice. <span className="text-primary">Your table.</span>
           </h1>
           <p className="text-muted-foreground max-w-prose text-lg text-pretty">
-            Every bot runs a Monte Carlo equity simulation on the server before
-            it acts, then plays that read through its own personality. Real side
-            pots, real showdowns, and a hand history that follows you.
+            Settle in for Texas Hold&apos;em against five distinct bot personalities.
+            Find your rhythm, sharpen your reads, and make the next hand yours.
           </p>
+        </div>
+
+        <a href="#table-setup" className="inline-flex min-h-11 w-fit items-center gap-2 rounded-xl bg-primary px-5 py-3 text-sm font-semibold text-primary-foreground lg:hidden">Set up your table <ArrowRight className="size-4" aria-hidden /></a>
+
+        <div className="lobby-table-art" aria-hidden="true">
+          <div className="lobby-table-outline"><Spade className="size-8 opacity-20" /><span>THE NEXT HAND IS YOURS</span></div>
+          <div className="lobby-card lobby-card-back">A<span>♠</span></div>
+          <div className="lobby-card lobby-card-front">A<span>♥</span></div>
+          <div className="lobby-chip lobby-chip-one" /><div className="lobby-chip lobby-chip-two" />
+          <span className="lobby-art-caption">TEXAS HOLD’EM / PLAY MONEY</span>
         </div>
 
         <dl className="grid gap-4 sm:grid-cols-3">
           <Feature icon={<Brain className="size-4" />} title="Five personalities">
-            Rocks, maniacs, calling stations, sharks and one balanced pro.
+            Read your opponents. Every bot plays a little differently.
           </Feature>
           <Feature icon={<Layers className="size-4" />} title="Full rules">
-            Side pots, short all-ins, split pots and odd-chip rules.
+            Authentic Hold’em, from the first blind to the showdown.
           </Feature>
           <Feature icon={<Trophy className="size-4" />} title="It counts">
-            Every hand updates your stats and your leaderboard position.
+            Follow your progress and climb the leaderboard.
           </Feature>
         </dl>
 
@@ -101,16 +110,16 @@ export default async function LobbyPage() {
         )}
       </section>
 
-      <section className="lg:sticky lg:top-24 lg:self-start">
-        <div className="border-border/70 bg-card/70 rounded-3xl border p-6 shadow-2xl shadow-black/30 backdrop-blur">
-          <h2 className="mb-1 text-xl font-semibold">Deal me in</h2>
+      <section id="table-setup" className="scroll-mt-24 min-w-0 lg:sticky lg:top-24 lg:self-start">
+        <div className="border-border/70 bg-card/90 rounded-3xl border p-5 shadow-2xl shadow-black/20 sm:p-7">
+          <div className="mb-5 flex items-center justify-between border-b border-border pb-5"><span className="text-xs font-medium tracking-[0.18em] text-muted-foreground">YOUR NEXT GAME</span><Spade className="size-5 text-primary" aria-hidden /></div>
+          <h2 className="mb-2 text-2xl font-semibold tracking-tight">Take a seat.</h2>
           <p className="text-muted-foreground mb-6 text-sm">
-            Pick your stakes and how many bots you want to beat.
+            A few choices. Then you’re in.
           </p>
           <NewTableForm defaultName={user?.displayName} />
           <p className="text-muted-foreground mt-4 text-center text-xs">
-            Chips are play money. Starting stack is{" "}
-            {formatChips(2000)} at low stakes.
+            No signup. No deposits. Just poker.
           </p>
         </div>
       </section>

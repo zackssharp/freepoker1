@@ -7,9 +7,9 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-sans);
+  --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-  --font-heading: var(--font-sans);
+  --font-heading: var(--font-geist-sans);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -88,9 +88,9 @@
 }
 
 .dark {
-  --background: oklch(0.163 0.018 258);
+  --background: oklch(0.17 0.015 165);
   --foreground: oklch(0.97 0.006 250);
-  --card: oklch(0.213 0.022 258);
+  --card: oklch(0.22 0.017 165);
   --card-foreground: oklch(0.97 0.006 250);
   --popover: oklch(0.213 0.022 258);
   --popover-foreground: oklch(0.97 0.006 250);
@@ -233,3 +233,110 @@
     animation: none;
   }
 }
+
+/* Lobby illustration and shared keyboard navigation. */
+@layer base {
+  a:focus-visible, button:focus-visible, summary:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 4px;
+}
+  button:not(:disabled), summary {
+  cursor: pointer;
+}
+  ::selection {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+}
+.lobby-shell {
+  background: radial-gradient(ellipse at 20% 20%, oklch(0.35 0.055 165 / 12%), transparent 65%);
+}
+.lobby-table-art {
+  position: relative;
+  height: 224px;
+  overflow: hidden;
+  border: 1px solid oklch(1 0 0 / 10%);
+  border-radius: 20px;
+  background: radial-gradient(ellipse at 50% 100%, #215543, #112c24 75%);
+}
+.lobby-table-outline {
+  position: absolute;
+  inset: 22px -35px -85px;
+  border: 1px solid #c9ae6240;
+  border-radius: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 25px;
+  gap: 10px;
+  color: #dcce9e;
+}
+.lobby-table-outline > span {
+  font-size: 9px;
+  letter-spacing: .25em;
+  padding-top: 11px;
+}
+.lobby-card {
+  position: absolute;
+  top: 79px;
+  left: calc(50% - 64px);
+  width: 84px;
+  height: 116px;
+  border-radius: 9px;
+  padding: 10px;
+  background: #f6f2e7;
+  color: #183229;
+  font: 600 24px Georgia, serif;
+  box-shadow: 0 8px 24px #0005;
+}
+.lobby-card > span {
+  display: block;
+  text-align: center;
+  font-size: 48px;
+  line-height: 1.1;
+}
+.lobby-card-back {
+  transform: rotate(-17deg);
+}
+.lobby-card-front {
+  left: calc(50% - 3px);
+  top: 85px;
+  transform: rotate(13deg);
+  color: #b94040;
+}
+.lobby-chip {
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  border: 5px dashed #ead596;
+  border-radius: 50%;
+  background: #957134;
+  box-shadow: 0 3px 0 #70501e, 0 6px 0 #957134, 0 10px 16px #0005;
+}
+.lobby-chip-one {
+  left: 19%;
+  top: 140px;
+  transform: rotate(-15deg);
+}
+.lobby-chip-two {
+  right: 16%;
+  top: 159px;
+  width: 35px;
+  height: 35px;
+}
+.lobby-art-caption {
+  position: absolute;
+  bottom: 12px;
+  left: 16px;
+  font-size: 8px;
+  letter-spacing: .16em;
+  color: #a6bbad;
+}
+@media (max-width: 639px) {
+  .lobby-table-art {
+  height: 200px;
+} .lobby-chip-one {
+  left: 10%;
+} .lobby-chip-two {
+  right: 9%;
+} }

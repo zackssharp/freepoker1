@@ -1,6 +1,8 @@
 import { Spade, Trophy, User } from "lucide-react";
 import Link from "next/link";
 
+import { NavLink } from "@/components/nav-link";
+
 import { getCurrentUser } from "@/lib/session";
 
 export async function SiteNav() {
@@ -8,15 +10,15 @@ export async function SiteNav() {
 
   return (
     <header className="border-border/60 bg-background/80 sticky top-0 z-30 border-b backdrop-blur">
-      <nav className="mx-auto flex w-full max-w-6xl items-center gap-1 px-4 py-3">
+      <nav aria-label="Main navigation" className="mx-auto flex w-full max-w-6xl items-center gap-1 px-3 py-4 sm:px-6">
         <Link
           href="/"
           className="mr-auto flex items-center gap-2 text-base font-semibold tracking-tight"
         >
-          <span className="bg-primary text-primary-foreground grid size-7 place-items-center rounded-md">
+          <span className="bg-primary text-primary-foreground grid size-9 place-items-center rounded-xl">
             <Spade className="size-4" aria-hidden />
           </span>
-          Free Poker
+          <span>Free Poker<span className="mt-0.5 hidden text-[9px] font-normal tracking-[0.2em] text-muted-foreground sm:block">A SEAT IS ALWAYS OPEN</span></span>
         </Link>
 
         <NavLink href="/leaderboard" icon={<Trophy className="size-4" />}>
@@ -27,25 +29,5 @@ export async function SiteNav() {
         </NavLink>
       </nav>
     </header>
-  );
-}
-
-function NavLink({
-  href,
-  icon,
-  children,
-}: {
-  href: string;
-  icon: React.ReactNode;
-  children: React.ReactNode;
-}) {
-  return (
-    <Link
-      href={href}
-      className="text-muted-foreground hover:text-foreground hover:bg-accent flex items-center gap-2 rounded-md px-3 py-1.5 text-sm font-medium transition-colors"
-    >
-      {icon}
-      <span className="max-w-32 truncate">{children}</span>
-    </Link>
   );
 }

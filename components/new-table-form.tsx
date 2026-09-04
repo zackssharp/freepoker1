@@ -1,6 +1,6 @@
 "use client";
 
-import { Loader2, Play } from "lucide-react";
+import { ArrowRight, Check, Loader2, Users } from "lucide-react";
 import { useState } from "react";
 import { useFormStatus } from "react-dom";
 
@@ -8,7 +8,6 @@ import { createGameAction } from "@/app/actions/game";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Slider } from "@/components/ui/slider";
 import {
   formatChips,
   MAX_OPPONENTS,
@@ -18,23 +17,17 @@ import {
 } from "@/lib/table-config";
 import { cn } from "@/lib/utils";
 
-/** Base UI reports either a scalar or a tuple depending on the thumb count. */
-function firstValue(value: number | readonly number[], fallback: number): number {
-  if (typeof value === "number") return value;
-  return value[0] ?? fallback;
-}
-
 function SubmitButton() {
   const { pending } = useFormStatus();
 
   return (
-    <Button type="submit" size="lg" className="w-full font-semibold" disabled={pending}>
+    <Button type="submit" size="lg" className="h-12 w-full rounded-xl font-semibold" disabled={pending}>
       {pending ? (
         <Loader2 className="size-4 animate-spin" aria-hidden />
       ) : (
-        <Play className="size-4" aria-hidden />
+        <ArrowRight className="size-4" aria-hidden />
       )}
-      {pending ? "Shuffling up…" : "Take a seat"}
+      {pending ? "Shuffling up…" : "Start playing"}
     </Button>
   );
 }
@@ -51,15 +44,18 @@ export function NewTableForm({ defaultName }: { defaultName?: string }) {
       <input type="hidden" name="opponents" value={opponents} />
 
       <div className="grid gap-2">
-        <Label htmlFor="displayName">Your name at the table</Label>
+        <Label htmlFor="displayName">Your display name</Label>
         <Input
           id="displayName"
           name="displayName"
           defaultValue={defaultName}
           placeholder="Guest"
+          className="h-11 rounded-xl"
+          aria-describedby="name-hint"
           maxLength={24}
           autoComplete="nickname"
         />
+        <p id="name-hint" className="text-xs text-muted-foreground">Optional. This is how you’ll appear at the table.</p>
       </div>
 
       <fieldset className="grid gap-2">
@@ -72,13 +68,13 @@ export function NewTableForm({ defaultName }: { defaultName?: string }) {
               onClick={() => setStakes(entry.id)}
               aria-pressed={stakes === entry.id}
               className={cn(
-                "rounded-xl border px-3 py-2.5 text-left transition-colors",
+                "relative min-h-20 rounded-xl border px-3 py-3 text-left transition-colors",
                 stakes === entry.id
                   ? "border-primary bg-primary/10"
                   : "border-border hover:border-primary/40 hover:bg-accent/50",
               )}
             >
-              <span className="block text-sm font-semibold">{entry.label}</span>
+              <span className="mb-2 flex items-center justify-between text-sm font-semibold">{entry.label}{stakes === entry.id && <Check className="size-3.5 text-primary" aria-hidden />}</span>
               <span className="text-muted-foreground block font-mono text-xs tabular-nums">
                 {formatChips(entry.smallBlind)}/{formatChips(entry.bigBlind)}
               </span>
@@ -95,25 +91,27 @@ export function NewTableForm({ defaultName }: { defaultName?: string }) {
 
       <div className="grid gap-3">
         <div className="flex items-baseline justify-between">
-          <Label htmlFor="opponents">Bots at the table</Label>
+          <span id="opponents-label" className="text-sm font-medium">Opponents</span>
           <span className="font-mono text-sm font-semibold tabular-nums">
             {opponents}
           </span>
         </div>
-        <Slider
-          id="opponents"
-          value={[opponents]}
-          min={MIN_OPPONENTS}
-          max={MAX_OPPONENTS}
-          step={1}
-          onValueChange={(value) => setOpponents(firstValue(value, 4))}
-        />
+        <div role="group" aria-labelledby="opponents-label" className="grid grid-cols-5 gap-2">
+          {Array.from({ length: MAX_OPPONENTS - MIN_OPPONENTS + 1 }, (_, index) => index + MIN_OPPONENTS).map((count) => (
+            <button key={count} type="button" aria-pressed={opponents === count} aria-label={`${count} ${count === 1 ? "opponent" : "opponents"}`} onClick={() => setOpponents(count)} className={cn("flex h-11 items-center justify-center gap-1.5 rounded-lg border text-sm font-medium transition-colors", opponents === count ? "border-primary bg-primary/10 text-primary" : "border-border text-muted-foreground hover:bg-accent")}><Users className="size-3.5" aria-hidden />{count}</button>
+          ))}
+        </div>
         <p className="text-muted-foreground text-xs">
-          Each bot is dealt one of five personalities — rocks fold, maniacs
-          raise, and the pro adjusts.
+          {opponents === 1 ? "Heads-up: just you and one bot." : `${opponents + 1} seats: you and ${opponents} bots with different playing styles.`}
         </p>
       </div>
 
+      {selected && (
+        <div aria-live="polite" aria-atomic="true" className="grid grid-cols-2 gap-4 rounded-xl border border-border bg-background/40 p-4">
+          <div><p className="mb-1 text-xs text-muted-foreground">Your starting stack</p><p className="font-mono text-lg font-semibold text-primary">{formatChips(selected.startingStack)} <span className="font-sans text-xs font-normal text-muted-foreground">chips</span></p></div>
+          <div className="border-l border-border pl-4"><p className="mb-1 text-xs text-muted-foreground">Small / big blind</p><p className="font-mono text-lg font-semibold">{formatChips(selected.smallBlind)} / {formatChips(selected.bigBlind)}</p></div>
+        </div>
+      )}
       <SubmitButton />
     </form>
   );

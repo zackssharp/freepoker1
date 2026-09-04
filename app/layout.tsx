@@ -33,8 +33,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       style={{ colorScheme: "dark" }}
     >
       <body className="bg-background text-foreground flex min-h-full flex-col">
+        <a href="#main-content" className="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:rounded-lg focus:bg-primary focus:px-4 focus:py-3 focus:text-primary-foreground">Skip to content</a>
         <SiteNav />
-        <main className="flex flex-1 flex-col">{children}</main>
+        <main id="main-content" tabIndex={-1} className="flex flex-1 flex-col">{children}</main>
         <Toaster position="top-center" />
       </body>
     </html>
