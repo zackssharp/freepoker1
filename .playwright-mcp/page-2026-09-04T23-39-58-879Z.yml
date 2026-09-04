@@ -1,0 +1,114 @@
+- generic [active] [ref=f4e1]:
+  - link "Skip to content" [ref=f4e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=f4e3]:
+    - navigation "Main navigation" [ref=f4e4]:
+      - link "Free Poker home" [ref=f4e5] [cursor=pointer]:
+        - /url: /
+        - generic [ref=f4e9]:
+          - text: FREE
+          - strong [ref=f4e10]: POKER
+      - link "Leaderboard" [ref=f4e11] [cursor=pointer]:
+        - /url: /leaderboard
+      - link "Guest" [ref=f4e13] [cursor=pointer]:
+        - /url: /profile
+  - main [ref=f4e15]:
+    - generic [ref=f4e16]:
+      - generic [ref=f4e17]:
+        - generic [ref=f4e19]:
+          - generic [ref=f4e20]:
+            - generic [ref=f4e22]:
+              - generic [ref=f4e23]:
+                - generic [ref=f4e24]: SB
+                - generic [ref=f4e31]:
+                  - paragraph [ref=f4e32]: Delia
+                  - paragraph [ref=f4e33]: 1,990
+              - generic [ref=f4e34]:
+                - generic [ref=f4e35]: Fold
+                - generic [ref=f4e36]: "10"
+            - generic [ref=f4e39]:
+              - generic [ref=f4e46]:
+                - generic [ref=f4e47]: BB
+                - generic [ref=f4e54]:
+                  - paragraph [ref=f4e55]: Cyrus
+                  - paragraph [ref=f4e56]: 1,920
+              - generic [ref=f4e57]:
+                - generic [ref=f4e58]: Raise
+                - generic [ref=f4e59]: "80"
+            - generic [ref=f4e62]:
+              - generic [ref=f4e69]:
+                - paragraph [ref=f4e70]: Boone
+                - paragraph [ref=f4e71]: 2,000
+              - generic [ref=f4e72]: Fold
+            - generic [ref=f4e75]:
+              - generic [ref=f4e82]:
+                - paragraph [ref=f4e83]: Hollis
+                - paragraph [ref=f4e84]: 2,000
+              - generic [ref=f4e85]: Fold
+            - generic [ref=f4e88]:
+              - generic [ref=f4e95]:
+                - paragraph [ref=f4e96]: Ada
+                - paragraph [ref=f4e97]: 2,000
+              - generic [ref=f4e98]: Fold
+          - generic [ref=f4e100]:
+            - generic [ref=f4e101]:
+              - generic [ref=f4e102]: Pre-flop
+              - generic [ref=f4e103]: "110"
+            - generic [ref=f4e104]: Waiting for the flop
+        - generic [ref=f4e106]:
+          - generic [aria-hidden] [ref=f4e107]: G
+          - generic [ref=f4e108]:
+            - paragraph [ref=f4e109]: Guest
+            - paragraph [ref=f4e110]:
+              - text: 1,980
+              - generic [ref=f4e111]: · 20 in
+          - generic [ref=f4e112]:
+            - img "Queen of hearts" [ref=f4e113]:
+              - generic [aria-hidden] [ref=f4e114]: Q
+              - generic [aria-hidden] [ref=f4e115]: ♥
+            - img "Four of hearts" [ref=f4e116]:
+              - generic [aria-hidden] [ref=f4e117]: "4"
+              - generic [aria-hidden] [ref=f4e118]: ♥
+        - generic [ref=f4e119]:
+          - generic [ref=f4e120]:
+            - generic [ref=f4e121]:
+              - generic [ref=f4e122]: Raise to
+              - generic [ref=f4e123]: "140"
+              - generic [ref=f4e124]:
+                - button "½ pot" [ref=f4e125] [cursor=pointer]
+                - button "¾ pot" [ref=f4e126] [cursor=pointer]
+                - button "Pot" [ref=f4e127] [cursor=pointer]
+                - button "All in" [ref=f4e128] [cursor=pointer]
+            - group "Raise to amount" [ref=f4e129]
+          - generic [ref=f4e132]:
+            - button "Fold" [ref=f4e133] [cursor=pointer]
+            - button "Call 60" [ref=f4e134] [cursor=pointer]:
+              - text: Call
+              - generic [ref=f4e135]: "60"
+            - button "Raise to 140" [ref=f4e136] [cursor=pointer]:
+              - text: Raise to
+              - generic [ref=f4e137]: "140"
+      - complementary [ref=f4e138]:
+        - generic [ref=f4e139]:
+          - generic [ref=f4e140]:
+            - paragraph [ref=f4e141]: Blinds
+            - paragraph [ref=f4e142]: 10 / 20
+          - generic [ref=f4e143]:
+            - paragraph [ref=f4e144]: Hand
+            - paragraph [ref=f4e145]: "#1"
+          - generic [ref=f4e146]:
+            - paragraph [ref=f4e147]: Players left
+            - paragraph [ref=f4e148]: "6"
+        - generic "Hand history" [ref=f4e149]:
+          - paragraph [ref=f4e150]: "Hand #1 is dealt"
+          - paragraph [ref=f4e151]: Delia posts the small blind (10)
+          - paragraph [ref=f4e152]: Cyrus posts the big blind (20)
+          - paragraph [ref=f4e153]: Boone folds
+          - paragraph [ref=f4e154]: Hollis folds
+          - paragraph [ref=f4e155]: Ada folds
+          - paragraph [ref=f4e156]: Guest calls 20
+          - paragraph [ref=f4e157]: Delia folds
+          - paragraph [ref=f4e158]: Cyrus raises to 80
+        - button "Leave table" [ref=f4e160] [cursor=pointer]
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=f4e166] [cursor=pointer]

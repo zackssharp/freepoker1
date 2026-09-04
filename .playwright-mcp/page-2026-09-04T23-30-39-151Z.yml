@@ -1,0 +1,55 @@
+- generic [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - navigation "Main navigation" [ref=e4]:
+      - link "Free Poker A SEAT IS ALWAYS OPEN" [ref=e331] [cursor=pointer]:
+        - /url: /
+        - generic [ref=e9]:
+          - text: Free Poker
+          - generic [ref=e10]: A SEAT IS ALWAYS OPEN
+      - link "Leaderboard" [active] [ref=e11] [cursor=pointer]:
+        - /url: /leaderboard
+      - link "Guest" [ref=e183] [cursor=pointer]:
+        - /url: /profile
+  - main [ref=e24]:
+    - generic [ref=e332]:
+      - generic [ref=e333]:
+        - generic [ref=e334]:
+          - heading "Leaderboard" [level=1] [ref=e335]
+          - paragraph [ref=e342]: Ranked by lifetime chips won across every table.
+        - button "Play a hand" [ref=e343] [cursor=pointer]
+      - table [ref=e346]:
+        - rowgroup [ref=e347]:
+          - row [ref=e348]:
+            - columnheader "#" [ref=e349]
+            - columnheader "Player" [ref=e350]
+            - columnheader "Hands" [ref=e351]
+            - columnheader "Win rate" [ref=e352]
+            - columnheader "Biggest pot" [ref=e353]
+            - columnheader "Net" [ref=e354]
+        - rowgroup [ref=e355]:
+          - row [ref=e356]:
+            - cell "1" [ref=e357]
+            - cell "quest" [ref=e358]
+            - cell "10" [ref=e362]
+            - cell "10%" [ref=e363]
+            - cell "1,945" [ref=e364]
+            - cell "−105" [ref=e365]
+          - row [ref=e366]:
+            - cell "2" [ref=e367]
+            - cell "fisher1" [ref=e368]
+            - cell "2" [ref=e372]
+            - cell "0%" [ref=e373]
+            - cell "0" [ref=e374]
+            - cell "−400" [ref=e375]
+          - row [ref=e376]:
+            - cell "3" [ref=e377]
+            - cell "Guest" [ref=e378]
+            - cell "7" [ref=e382]
+            - cell "0%" [ref=e383]
+            - cell "0" [ref=e384]
+            - cell "−2,000" [ref=e385]
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e175] [cursor=pointer]
+  - alert [ref=e179]: Leaderboard

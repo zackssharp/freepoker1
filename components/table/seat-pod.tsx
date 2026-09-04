@@ -82,7 +82,7 @@ export function SeatPod({
   return (
     <div
       className={cn(
-        "flex w-[8.5rem] flex-col items-center gap-1",
+        "seat-pod flex w-full flex-col items-center gap-1",
         seat.isHero && "w-[10rem]",
       )}
     >

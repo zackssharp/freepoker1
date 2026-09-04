@@ -71,8 +71,8 @@ export function PokerTable({ initialView }: { initialView: TableView }) {
   );
 
   return (
-    <div className="mx-auto grid w-full max-w-6xl flex-1 gap-4 px-4 py-4 lg:grid-cols-[1fr_18rem]">
-      <div className="flex flex-col gap-4">
+    <div className="game-shell mx-auto grid w-full max-w-7xl flex-1 gap-4 px-4 py-4 lg:grid-cols-[minmax(0,1fr)_16rem]">
+      <div className="game-main flex min-w-0 flex-col gap-4">
         {/* --- Felt ------------------------------------------------------ */}
         <div className="poker-rail rounded-[2.5rem] p-2 sm:p-3">
           <div
@@ -80,21 +80,22 @@ export function PokerTable({ initialView }: { initialView: TableView }) {
               "poker-felt felt-weave relative aspect-[5/4] w-full rounded-[2rem] sm:aspect-[16/9]",
             )}
           >
+            <div className="opponent-seats">
             {opponents.map((seat, index) => (
               <div
                 key={seat.id}
-                className="absolute -translate-x-1/2 -translate-y-1/2"
+                className="opponent-seat absolute"
                 style={{
                   ...opponentPosition(index, opponents.length),
-                  width: "clamp(5.25rem, 19vw, 8.5rem)",
                 }}
               >
                 <SeatPod seat={seat} />
               </div>
             ))}
+            </div>
 
             {/* --- Pot and board --- */}
-            <div className="absolute top-1/2 left-1/2 flex w-full -translate-x-1/2 -translate-y-1/2 flex-col items-center gap-2 px-4">
+            <div className="community-board absolute top-[60%] left-1/2 flex w-full flex-col items-center gap-2 px-4">
               <div className="flex items-center gap-2 text-white/90">
                 <span className="text-[10px] font-semibold tracking-[0.2em] uppercase opacity-70">
                   {STREET_LABELS[view.street]}

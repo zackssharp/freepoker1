@@ -1,0 +1,102 @@
+- generic [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - navigation "Main navigation" [ref=e4]:
+      - link "Free Poker" [ref=e180] [cursor=pointer]:
+        - /url: /
+      - link "Leaderboard" [ref=e11] [cursor=pointer]:
+        - /url: /leaderboard
+      - link "Profile" [ref=e19] [cursor=pointer]:
+        - /url: /profile
+  - main [ref=e24]:
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - generic [ref=e28]: FREE TO PLAY · ALWAYS
+          - heading "Good hands. Good practice. Your table." [level=1] [ref=e29]
+          - paragraph [ref=e30]: Settle in for Texas Hold'em against five distinct bot personalities. Find your rhythm, sharpen your reads, and make the next hand yours.
+        - link "Set up your table" [ref=e31] [cursor=pointer]:
+          - /url: "#table-setup"
+        - generic [aria-hidden] [ref=e34]:
+          - generic [ref=e35]: THE NEXT HAND IS YOURS
+          - generic [ref=e39]:
+            - text: A
+            - generic [ref=e40]: ♠
+          - generic [ref=e41]:
+            - text: A
+            - generic [ref=e42]: ♥
+          - generic [ref=e45]: TEXAS HOLD’EM / PLAY MONEY
+        - generic [ref=e46]:
+          - generic [ref=e47]:
+            - term [ref=e48]: Five personalities
+            - definition [ref=e58]: Read your opponents. Every bot plays a little differently.
+          - generic [ref=e59]:
+            - term [ref=e60]: Full rules
+            - definition [ref=e66]: Authentic Hold’em, from the first blind to the showdown.
+          - generic [ref=e67]:
+            - term [ref=e68]: It counts
+            - definition [ref=e76]: Follow your progress and climb the leaderboard.
+        - generic [ref=e77]:
+          - generic [ref=e78]:
+            - heading "Top of the leaderboard" [level=2] [ref=e79]
+            - link "See all" [ref=e80] [cursor=pointer]:
+              - /url: /leaderboard
+          - list [ref=e81]:
+            - listitem [ref=e82]:
+              - generic [ref=e83]: "1"
+              - generic [ref=e85]: quest
+              - generic [ref=e86]: −105
+            - listitem [ref=e87]:
+              - generic [ref=e88]: "2"
+              - generic [ref=e90]: fisher1
+              - generic [ref=e91]: −400
+            - listitem [ref=e92]:
+              - generic [ref=e93]: "3"
+              - generic [ref=e95]: Guest
+              - generic [ref=e96]: −2,000
+      - generic [ref=e98]:
+        - generic [ref=e99]: YOUR NEXT GAME
+        - heading "Take a seat." [level=2] [ref=e103]
+        - paragraph [ref=e104]: A few choices. Then you’re in.
+        - generic [ref=e105]:
+          - generic [ref=e106]:
+            - generic [ref=e107]: Your display name
+            - textbox "Your display name" [ref=e108]:
+              - /placeholder: Guest
+            - paragraph [ref=e109]: Optional. This is how you’ll appear at the table.
+          - group "Stakes" [ref=e110]:
+            - generic [ref=e112]:
+              - button "Micro 5/10" [active] [pressed] [ref=e113] [cursor=pointer]:
+                - generic [ref=e114]: Micro
+                - generic [ref=e115]: 5/10
+              - button "Low 10/20" [ref=e116] [cursor=pointer]:
+                - generic [ref=e117]: Low
+                - generic [ref=e120]: 10/20
+              - button "High 25/50" [ref=e121] [cursor=pointer]:
+                - generic [ref=e122]: High
+                - generic [ref=e123]: 25/50
+            - paragraph [ref=e124]: Everyone starts with 1,000 chips — 100 big blinds.
+          - generic [ref=e125]:
+            - generic [ref=e126]:
+              - generic [ref=e127]: Opponents
+              - generic [ref=e128]: "4"
+            - group "Opponents" [ref=e129]:
+              - button "1 opponent" [ref=e130] [cursor=pointer]: "1"
+              - button "2 opponents" [ref=e136] [cursor=pointer]: "2"
+              - button "3 opponents" [ref=e142] [cursor=pointer]: "3"
+              - button "4 opponents" [pressed] [ref=e148] [cursor=pointer]: "4"
+              - button "5 opponents" [ref=e154] [cursor=pointer]: "5"
+            - paragraph [ref=e160]: "5 seats: you and 4 bots with different playing styles."
+          - generic [ref=e161]:
+            - generic [ref=e162]:
+              - paragraph [ref=e163]: Your starting stack
+              - paragraph [ref=e164]: 1,000 chips
+            - generic [ref=e165]:
+              - paragraph [ref=e166]: Small / big blind
+              - paragraph [ref=e167]: 5 / 10
+          - button "Start playing" [ref=e168] [cursor=pointer]
+        - paragraph [ref=e169]: No signup. No deposits. Just poker.
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e175] [cursor=pointer]
+  - alert [ref=e179]

@@ -1,0 +1,37 @@
+- generic [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - navigation "Main navigation" [ref=e4]:
+      - link "Free Poker" [ref=e386] [cursor=pointer]:
+        - /url: /
+      - link "Leaderboard" [ref=e11] [cursor=pointer]:
+        - /url: /leaderboard
+      - link "Guest" [active] [ref=e183] [cursor=pointer]:
+        - /url: /profile
+  - main [ref=e24]:
+    - generic [ref=e387]:
+      - generic [ref=e388]:
+        - generic [aria-hidden] [ref=e389]: G
+        - generic [ref=e390]:
+          - heading "Guest" [level=1] [ref=e391]
+          - paragraph [ref=e392]: "@guest-ghsb"
+        - button "New table" [ref=e393] [cursor=pointer]
+      - generic [ref=e394]:
+        - generic [ref=e395]:
+          - term [ref=e396]: Net chips
+          - definition [ref=e397]: "0"
+        - generic [ref=e398]:
+          - term [ref=e399]: Hands played
+          - definition [ref=e400]: "0"
+        - generic [ref=e401]:
+          - term [ref=e402]: Hands won
+          - definition [ref=e403]: 0—
+        - generic [ref=e404]:
+          - term [ref=e405]: Leaderboard
+          - definition [ref=e406]: Unranked
+      - heading "Recent hands" [level=2] [ref=e407]
+      - paragraph [ref=e409]: No hands yet. Your history shows up here as soon as you play one.
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e175] [cursor=pointer]
+  - alert [ref=e179]: Guest

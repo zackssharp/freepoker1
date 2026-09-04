@@ -1,0 +1,3 @@
+[    6715ms] [WARNING] The AudioContext was not allowed to start. It must be resumed (or created) after a user gesture on the page. https://developer.chrome.com/blog/autoplay/#web_audio @ https://www.247freepoker.com/game/js/game.js?v=1715992068054:0
+[    7509ms] [WARNING] WARNING: CreateJS is using unoptimized hit testing. This may incure a performance hit becuase it allows to pixel testing. @ https://www.247freepoker.com/game/js/game.js?v=1715992068054:0
+[    7541ms] [WARNING] Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently @ https://www.247freepoker.com/game/js/game.js?v=1715992068054:0

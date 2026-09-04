@@ -1,0 +1,103 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - navigation "Main navigation" [ref=e4]:
+      - link "Free Poker" [ref=e180] [cursor=pointer]:
+        - /url: /
+      - link "Leaderboard" [ref=e11] [cursor=pointer]:
+        - /url: /leaderboard
+      - link "Guest" [ref=e183] [cursor=pointer]:
+        - /url: /profile
+  - main [ref=e24]:
+    - generic [ref=e184]:
+      - generic [ref=e185]:
+        - generic [ref=e187]:
+          - generic [ref=e189]:
+            - generic [ref=e196]:
+              - generic [ref=e197]: SB
+              - generic [ref=e204]:
+                - paragraph [ref=e205]: Esme
+                - paragraph [ref=e206]: "995"
+            - generic [ref=e207]: "5"
+          - generic [ref=e211]:
+            - generic [ref=e218]:
+              - generic [ref=e219]: BB
+              - generic [ref=e226]:
+                - paragraph [ref=e227]: Boone
+                - paragraph [ref=e228]: "990"
+            - generic [ref=e229]: "10"
+          - generic [ref=e233]:
+            - generic [ref=e240]:
+              - paragraph [ref=e241]: Greer
+              - paragraph [ref=e242]: 1,000
+            - generic [ref=e243]: Fold
+          - generic [ref=e246]:
+            - generic [ref=e253]:
+              - paragraph [ref=e254]: Ada
+              - paragraph [ref=e255]: 1,000
+            - generic [ref=e256]: Fold
+          - generic [ref=e259]:
+            - generic [ref=e266]:
+              - paragraph [ref=e267]: Delia
+              - paragraph [ref=e268]: 1,000
+            - generic [ref=e269]: Fold
+          - generic [ref=e271]:
+            - generic [ref=e272]:
+              - generic [ref=e273]: Pre-flop
+              - generic [ref=e274]: "15"
+            - generic [ref=e275]: Waiting for the flop
+        - generic [ref=e277]:
+          - generic [aria-hidden] [ref=e278]: G
+          - generic [ref=e279]:
+            - paragraph [ref=e280]: Guest
+            - paragraph [ref=e281]: 1,000
+          - generic [ref=e282]:
+            - img "Ten of hearts" [ref=e283]:
+              - generic [aria-hidden] [ref=e284]: T
+              - generic [aria-hidden] [ref=e285]: ♥
+            - img "Seven of hearts" [ref=e286]:
+              - generic [aria-hidden] [ref=e287]: "7"
+              - generic [aria-hidden] [ref=e288]: ♥
+        - generic [ref=e289]:
+          - generic [ref=e290]:
+            - generic [ref=e291]:
+              - generic [ref=e292]: Raise to
+              - generic [ref=e293]: "20"
+              - generic [ref=e294]:
+                - button "½ pot" [ref=e295] [cursor=pointer]
+                - button "¾ pot" [ref=e296] [cursor=pointer]
+                - button "Pot" [ref=e297] [cursor=pointer]
+                - button "All in" [ref=e298] [cursor=pointer]
+            - group "Raise to amount" [ref=e299]:
+              - slider [ref=e304]: "20"
+          - generic [ref=e305]:
+            - button "Fold" [ref=e306] [cursor=pointer]
+            - button "Call 10" [ref=e307] [cursor=pointer]:
+              - text: Call
+              - generic [ref=e308]: "10"
+            - button "Raise to 20" [ref=e309] [cursor=pointer]:
+              - text: Raise to
+              - generic [ref=e310]: "20"
+      - complementary [ref=e311]:
+        - generic [ref=e312]:
+          - generic [ref=e313]:
+            - paragraph [ref=e314]: Blinds
+            - paragraph [ref=e315]: 5 / 10
+          - generic [ref=e316]:
+            - paragraph [ref=e317]: Hand
+            - paragraph [ref=e318]: "#1"
+          - generic [ref=e319]:
+            - paragraph [ref=e320]: Players left
+            - paragraph [ref=e321]: "6"
+        - generic "Hand history" [ref=e322]:
+          - paragraph [ref=e323]: "Hand #1 is dealt"
+          - paragraph [ref=e324]: Esme posts the small blind (5)
+          - paragraph [ref=e325]: Boone posts the big blind (10)
+          - paragraph [ref=e326]: Greer folds
+          - paragraph [ref=e327]: Ada folds
+          - paragraph [ref=e328]: Delia folds
+        - button "Leave table" [ref=e330] [cursor=pointer]
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e175] [cursor=pointer]
+  - alert [ref=e179]

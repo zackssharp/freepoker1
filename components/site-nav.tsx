@@ -9,16 +9,17 @@ export async function SiteNav() {
   const user = await getCurrentUser();
 
   return (
-    <header className="border-border/60 bg-background/80 sticky top-0 z-30 border-b backdrop-blur">
-      <nav aria-label="Main navigation" className="mx-auto flex w-full max-w-6xl items-center gap-1 px-3 py-4 sm:px-6">
+    <header className="casino-header sticky top-0 z-30">
+      <nav aria-label="Main navigation" className="mx-auto flex w-full max-w-7xl items-center gap-1 px-3 py-2 sm:px-6">
         <Link
           href="/"
-          className="mr-auto flex items-center gap-2 text-base font-semibold tracking-tight"
+          aria-label="Free Poker home"
+          className="casino-brand mr-auto flex items-center gap-2"
         >
-          <span className="bg-primary text-primary-foreground grid size-9 place-items-center rounded-xl">
+          <span className="brand-chip">
             <Spade className="size-4" aria-hidden />
           </span>
-          <span>Free Poker<span className="mt-0.5 hidden text-[9px] font-normal tracking-[0.2em] text-muted-foreground sm:block">A SEAT IS ALWAYS OPEN</span></span>
+          <span className="brand-wordmark">FREE <strong>POKER</strong></span>
         </Link>
 
         <NavLink href="/leaderboard" icon={<Trophy className="size-4" />}>
