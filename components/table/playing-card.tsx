@@ -55,7 +55,7 @@ export function PlayingCard({
         )}
         aria-hidden
       >
-        {rankOf(card)}
+        {rankOf(card) === "T" ? "10" : rankOf(card)}
       </span>
       <span
         className={cn(style.pip, isRed ? "pip-red" : "pip-black")}
