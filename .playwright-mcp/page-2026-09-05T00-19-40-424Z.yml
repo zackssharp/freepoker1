@@ -1,0 +1,412 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - generic:
+        - generic:
+          - generic:
+            - img "247 Poker title image"
+          - link "home" [ref=e5] [cursor=pointer]:
+            - /url: ./
+      - generic [ref=e7] [cursor=pointer]
+  - main [ref=e13]:
+    - generic [ref=e16]:
+      - iframe [active] [ref=e18]:
+        - generic [active] [ref=f1e1]: LOADING... 100%
+      - generic [ref=e20]:
+        - img "close button" [ref=e21] [cursor=pointer]
+        - paragraph: Also Try...
+        - img "preloader image" [ref=e22] [cursor=pointer]
+    - generic [ref=e24]:
+      - generic [ref=e25]:
+        - heading "Free Poker 247 - How to Play Free Poker" [level=1] [ref=e26]
+        - generic [ref=e27]:
+          - generic [ref=e28]:
+            - paragraph [ref=e29]: Texas Holdem Poker is among the world’s most popular card games. That’s because it involves luck, subterfuge, and guile to win, elegantly combining strategy with chance. The fact that players never know how a round will end makes the game even more alluring. No wonder millions of people play the game every day!
+            - paragraph [ref=e30]: The following guide teaches you to play Texas Holdem Poker step-by-step. You’ll learn the basics, plus extra tactics you can deploy to improve your chances of winning.
+          - generic [ref=e31]:
+            - heading "Step-By-Step Texas Holdem Poker Guide" [level=2] [ref=e32]
+            - paragraph [ref=e33]: Texas Holdem Poker isn’t a game you can pick up in five minutes. That’s because there’s a lot to learn. You need to understand the betting structure, hand rankings, and order of play.
+            - paragraph [ref=e34]: With that said, it should come naturally once you get the hang of it. Each round follows a similar pattern. The most challenging aspect of getting started is remembering the five-card hand rankings. The rest is pretty straightforward.
+            - paragraph [ref=e35]: This section explains the elements of the game and how they contribute to your overall strategy. Learning the basics will enable you to get started, but as you keep running through rounds, you’ll naturally discover new tactics (within the rules) to outfox your opponents.
+          - generic [ref=e36]:
+            - heading "The Betting Structure" [level=3] [ref=e37]
+            - paragraph [ref=e38]: Betting is at the heart of Texas Holdem Poker. Players place chips on the table when they believe they may win a hand (or want to bluff an opponent into giving up on that particular round).
+            - paragraph [ref=e39]: "Texas Holdem Poker has four betting rounds. (We will explain how they fit together later. For now, focus on understanding what they mean). Here’s what you need to know:"
+            - paragraph [ref=e40]:
+              - strong [ref=e41]: 1. Pre-flop
+            - paragraph [ref=e42]:
+              - img "poker preflop" [ref=e43]
+            - paragraph [ref=e44]: By tradition, the first betting round in Texas Holdem Poker is the pre-flop. Here, players place bets before the dealer deals cards.
+            - paragraph [ref=e45]: Options include fold, call, and raise. Folding means players voluntarily eliminate themselves from the round before seeing more cards. Players might decide on this option if they believe they have a poor hand (or another player has a good one).
+            - paragraph [ref=e46]: “Call” means that players match the existing bet for the round. “Raise” means that players add to the current wager.
+            - paragraph [ref=e47]: The first player to the dealer’s left is the “small blind,” and the second is the “big blind.” Texas Holdem Poker uses the “blind” terminology to emphasize that these players must place bets without seeing any cards.
+            - paragraph [ref=e48]: Texas Holdem Poker requires the “small blind” to place half the small bet limit at the table. The “big blind” must place a bet equal to this limit.
+            - paragraph [ref=e49]: Players decide on the limits before the game begins. When betting at a casino, the house might decide what this betting limit is.
+            - paragraph [ref=e50]:
+              - strong [ref=e51]: 2. Flop
+            - paragraph [ref=e52]:
+              - img "poker flop" [ref=e53]
+            - paragraph [ref=e54]: The “flop” refers to the first three community cards the dealer lays face-up on the table, taken from the top of the freshly shuffled pack and cut pack. Players compare the cards in their hands to those on the table to see if they can make good hands from them.
+            - paragraph [ref=e55]: Following that is another round of betting where players can fold, call (check), or raise using chips or cash. If players believe they have a good hand or other players have bad ones, they may decide to raise their bets. Other players can then call or raise further.
+            - paragraph [ref=e56]: If players believe they have a bad hand, they can fold and cut their losses. Players who fold must relinquish all chips bet in that round.
+            - paragraph [ref=e57]:
+              - strong [ref=e58]: 3. Turn
+            - paragraph [ref=e59]:
+              - img "poker turn" [ref=e60]
+            - paragraph [ref=e61]: Texas Holdem Poker calls the fourth dealt community card the “turn.” Here, the dealer places another card from the pack beside the flop.
+            - paragraph [ref=e62]: The additional card provides more opportunities for players to construct five-card winning hands. Players can attempt to make straights, flushes, and other combinations.
+            - paragraph [ref=e63]: "Once the turn occurs, players engage in another round of betting. The options are the same as in previous betting rounds: players can fold, call, or raise, starting with the “small blind” and moving left from the dealer’s position."
+            - paragraph [ref=e64]: Again, players must weigh up whether to continue placing bets or fold. At this stage, players will also try to assess the behavior of other players to determine the quality of their hands, calling or raising to pressure opponents to fold or increase the stakes.
+            - paragraph [ref=e65]:
+              - strong [ref=e66]: 4. River
+            - paragraph [ref=e67]:
+              - img "poker river" [ref=e68]
+            - paragraph [ref=e69]: The fifth and final community card is the river. Dealers place this face up in the center of the table next to the other cards already presented.
+            - paragraph [ref=e70]: Adding the final community card gives players another opportunity to create winning hands. Again, they can fold, call (check), or raise, depending on their perceived chances of winning the round.
+            - paragraph [ref=e71]: In some cases, players may decide to go all-in. In other cases, one player may raise, and no one else will call, leading to the end of the round before any player reveals their cards.
+          - generic [ref=e72]:
+            - heading "Hand Rankings" [level=2] [ref=e73]
+            - paragraph [ref=e74]:
+              - text: In Texas Holdem
+              - link "Poker" [ref=e75] [cursor=pointer]:
+                - /url: ./
+              - text: ", players aim to construct the highest-ranking five-card sets from the five community cards and the two cards the dealer deals to each player at the start of the round."
+            - paragraph [ref=e76]: The game ranks hands based on the rough probability of them occurring. Higher ranks are less probable but mean players who construct them are significantly more likely to win a round.
+            - paragraph [ref=e77]: "Here are the rankings from highest to lowest:"
+            - list [ref=e78]:
+              - listitem [ref=e79]:
+                - strong [ref=e80]: Royal flush
+                - text: ": An Ace, King, Queen, Jack, and ten in the same suit"
+              - listitem [ref=e81]:
+                - strong [ref=e82]: Straight flush
+                - text: ": Five cards of the same suit in a sequence. For instance, the 6, 5, 4, 3, and 2 of hearts."
+              - listitem [ref=e83]:
+                - strong [ref=e84]: Four of a kind
+                - text: ": A hand of four cards of the same rank and any other card. For example, the queen of hearts, queen of diamonds, queen of spades, and queen of clubs."
+              - listitem [ref=e85]:
+                - strong [ref=e86]: Full house
+                - text: ": A hand consisting of three cards of one rank and two cards of another. For example, three jacks and two fours."
+              - listitem [ref=e87]:
+                - strong [ref=e88]: Flush
+                - text: ": A hand with five cards from the same suit. For example, the 3, 5, 7, 9, and King of Spades."
+              - listitem [ref=e89]:
+                - strong [ref=e90]: Straight
+                - text: ": A hand consistent of five cards in sequence from any suit. For example, the 2 of clubs, 3 of hearts, 4 of diamonds, 5 of spades, and 6 of clubs."
+              - listitem [ref=e91]:
+                - strong [ref=e92]: Three of a kind
+                - text: ": A hand consisting of three cards of the same rank and any other two cards"
+              - listitem [ref=e93]:
+                - strong [ref=e94]: Two pair
+                - text: ": A hand comprising two pairs of cards of the same rank. For example, two kings and two aces."
+              - listitem [ref=e95]:
+                - strong [ref=e96]: One pair
+                - text: ": A hand with a single pair of cards of the same rank."
+              - listitem [ref=e97]:
+                - strong [ref=e98]: High card
+                - text: ": A hand that doesn’t fit into any of the above categories. The player with the highest-ranked card wins."
+          - generic [ref=e99]:
+            - 'heading "Playing A Round Of Poker: Example" [level=2] [ref=e100]'
+            - img "poker example" [ref=e101]
+            - paragraph [ref=e102]: Now you understand betting, you are ready to play a round of poker. It’s a good idea to spend some time practicing first before placing any real bets. (A lot of players simply use physical or digital chips).
+            - paragraph [ref=e103]:
+              - strong [ref=e104]: 1. Deal Cards
+            - paragraph [ref=e105]:
+              - img "poker deal" [ref=e106]
+            - paragraph [ref=e107]: The game begins with the dealer dealing each player with two cards for their eyes only. (Revealing the cards would undermine the game because everyone would know each other’s hands).
+            - paragraph [ref=e108]: Sometimes, the dealer can be an official representative (i.e., a casino employee). However, it is often just a player responsible for dealing cards at the end of each round. It can also be the computer if playing online!
+            - paragraph [ref=e109]: In in-person Texas Holdem Poker, the dealer is always the last person to fold, call, or raise. Games usually represent them by the dealer button – a physical or digital token.
+            - paragraph [ref=e110]: The dealer button passes to the player on the left after every round in in-person matches to keep games fair. However, in online poker, a random algorithmic dealing ensures fairness.
+            - paragraph [ref=e111]:
+              - strong [ref=e112]: 2. Assign Small and Big Blinds
+            - paragraph
+            - paragraph [ref=e113]: The next step is to assign small and big blinds. These players must place an initial bet as described above. If they refuse, they must leave the game. (In online poker, the computer does this automatically).
+            - paragraph [ref=e114]:
+              - strong [ref=e115]: 3. Pre-flop Betting Begins
+            - paragraph [ref=e116]:
+              - img "poker betting" [ref=e117]
+            - paragraph [ref=e118]: Then, players look at their cards and decide to fold, match existing bets, or raise them. Remember, at this stage, there are no cards on the table. However, players might predict they can make high-ranking five-card hands based on the two cards they already have. If that’s the case, they may raise the initial bets placed by the small and big blinds.
+            - paragraph [ref=e119]:
+              - strong [ref=e120]: 4. Flop
+            - paragraph [ref=e121]:
+              - img "poker flop example" [ref=e122]
+            - paragraph [ref=e123]: Once all players fold, call, or raise during pre-flop betting, the dealer deals the three flop cards face up on the table. Betting begins again, starting with the small blind and moving to the left. Each player can fold, call, or raise.
+            - paragraph [ref=e124]:
+              - strong [ref=e125]: 5. Turn
+            - paragraph [ref=e126]:
+              - img "poker turn example" [ref=e127]
+            - paragraph [ref=e128]: Once the betting finishes, the dealer places another card face-up on the table, and another betting round ensues.
+            - paragraph [ref=e129]:
+              - strong [ref=e130]: 6. River
+            - paragraph [ref=e131]:
+              - img "poker river example" [ref=e132]
+            - paragraph [ref=e133]: The dealer places the fifth and final community card face up on the table, and betting begins again, starting with the small blind immediately to the left of the dealer button.
+            - paragraph [ref=e134]:
+              - strong [ref=e135]: 7. Showdown
+            - paragraph [ref=e136]:
+              - img "poker showdown" [ref=e137]
+            - paragraph [ref=e138]: The showdown is the final stage of a round of poker. It only occurs if two or more players have active hands after the dealer places the last card. During this step, players must reveal their hands. The person with the highest-ranking five-card set wins.
+            - paragraph [ref=e139]: Showdowns don’t occur during every round. If all players except one fold, the remaining player wins and takes all chips betted up to that point. However, they must happen if two or more players remain in the round.
+            - paragraph [ref=e140]: Once players stop raising each other, the showdown occurs. Players must lay their cards on the table and can announce their five-card combination if they want, such as “straight flush.” Then, players agree on who won the round based on the card rankings described above.
+          - generic [ref=e141]:
+            - heading "How Does Texas Holdem Poker Differ From Other Types Of Poker?" [level=2] [ref=e142]
+            - paragraph [ref=e143]: Texas Holdem Poker is so popular today that it is often the only card game many people ever learn how to play. However, many different versions of the game exist.
+            - paragraph [ref=e144]: The main difference between Texas Holdem and these other types of poker is hand size. In conventional forms of Poker, players start with five card hands and then make hands using the community cards. However, in Texas Holdem, you begin with just two. Players then have seven cards – five community cards and the two dealt cards – to make high-ranking combinations.
+            - paragraph [ref=e145]: Another significant difference between conventional poker and Texas Holdem is that you are betting against other players, not the casino. (This might be why the game became so popular). In the regular version, the casino deals cards, and then players must construct hands, betting against a single entity. However, Texas Holdem forces players to consider multiple opposing hands, which requires a new set of calculations.
+            - paragraph [ref=e146]: The number of betting rounds is also different in Texas Holdem. For example, there is an opening “ante” bet and two betting rounds in five-card draw poker. However, there are four betting rounds in Texas Holdem, including the pre-flop.
+            - paragraph [ref=e147]: Finally, Texas Holdem differs from some other forms of poker by allowing no-limit betting. Players can go “all in” at any time, betting any remaining money or chips in a single round. Other forms of poker often have betting limits to prevent house losses.
+          - generic [ref=e148]:
+            - heading "Texas Holdem Poker Strategies" [level=2] [ref=e149]
+            - paragraph [ref=e150]: While the basic rules of Texas Holdem Poker are simple, they hide tremendous complexity. Advanced games can incorporate multiple strategies, including expected returns, probabilities, and bluffs. As such, the game might take you an hour to learn but years to master.
+            - paragraph [ref=e151]: "The trick to getting good at Texas Holdem Poker is to learn strategy. Understanding advanced principles increases the likelihood of winning the round (even if you don’t have a winning hand). Here are some of the tactics you could try:"
+            - paragraph [ref=e152]:
+              - strong [ref=e153]: Overbet On The River
+            - paragraph
+            - paragraph [ref=e154]: The river is the final betting round in Texas Holdem. As such, it is when the most chips are on the table.
+            - paragraph [ref=e155]: For risk-loving players, this is an opportunity. Players with poor hands sometimes perform an “overbet jam,” where they place a large bet on the table during the river, hoping all other players will fold. If they do, the high-bet player will receive all the chips, irrespective of their hand.
+            - paragraph [ref=e156]: Players call this strategy bluffing. It occurs when a player thinks they will lose the round based on probability but goes ahead and places a high bet anyway. The genius of Texas Holdem Poker’s setup is that it forces other players to try to read their opponents to determine if they are bluffing.
+            - paragraph [ref=e157]:
+              - strong [ref=e158]: Use “Backdoor Flush” To Bluff
+            - paragraph
+            - paragraph [ref=e159]: Players wanting to bluff often use “backdoor flushes” in their strategy. A backdoor flush is a flush that might occur depending on the community cards drawn for the turn and river.
+            - paragraph [ref=e160]: Texas Holdem strategists believe this hand is the best for bluffing because opponents are unlikely to call it out. Other players often believe the bluffer has a winning hand if the community cards indicate a flush is possible.
+            - paragraph [ref=e161]: The genius of this strategy is that the person bluffing really could have a flush and be able to use it in a showdown. This fact makes the backdoor flush one of the most-loved tactical strategies.
+            - paragraph [ref=e162]:
+              - strong [ref=e163]: Raise Immediately After The Flop
+            - paragraph
+            - paragraph [ref=e164]: Another strategy some players use is check-raising after the flop. Players immediately to the left of the big blind will often place a large bet early in the round, attempting to get players with poor hands to fold. This strategy can often work as there is considerable uncertainty at the start of a round over the hands players can make. An exceptional hand is less likely when players must construct them from five cards instead of seven.
+            - paragraph [ref=e165]:
+              - strong [ref=e166]: Suited Connectors Are Money Makers
+            - paragraph
+            - paragraph [ref=e167]: When playing Texas Holdem, look for suited connectors in your two-card hand. Two non-sequential cards in the same suit can yield high-value hands, including straight and royal flushes.
+            - paragraph [ref=e168]: "For instance, the dealer might deal you the Jack and 9 of clubs. To make a straight flush, you need the community cards to contain the 10 of clubs and two of the following: the queen of clubs, the king of clubs, the 8 of clubs, and the 7 of clubs."
+          - generic [ref=e169]:
+            - heading "Now You Know How To Play Texas Holdem" [level=2] [ref=e170]
+            - paragraph [ref=e171]: As you continue playing Texas Holdem, you will discover multiple strategies that increase your likelihood of winning. However, you may also face more formidable and sophisticated opponents, making it challenging to know which strategy to adopt.
+            - paragraph [ref=e172]: The best players keep experimenting and learning from their opponents. Learning all the probabilities can help, but there is considerable uncertainty. Knowing what to do in any situation and playing consistently over multiple rounds increases the likelihood of winning.
+      - generic [ref=e173]:
+        - heading "Free Poker Features" [level=2] [ref=e174]
+        - list [ref=e176]:
+          - listitem [ref=e177]: Single player free poker game - Texas Holdem
+          - listitem [ref=e178]: Master the odds of real Texas Holdem poker
+          - listitem [ref=e179]: Compete against your own high score and watch your game improve
+          - listitem [ref=e180]: Learn all five unique AI personalities - each with his / her own playing behavior
+          - listitem [ref=e181]: Poker game is automatically saved as you play
+      - generic [ref=e182]:
+        - heading "Seasonal Poker Games" [level=2] [ref=e183]
+        - generic [ref=e185]:
+          - link [ref=e186] [cursor=pointer]:
+            - /url: ./
+            - img "Play 247 Poker" [ref=e188]
+            - generic [ref=e189]: 247Poker
+          - link [ref=e190] [cursor=pointer]:
+            - /url: ./spring/
+            - img "Play Spring Poker" [ref=e192]
+            - generic [ref=e193]: SpringPoker
+          - link [ref=e194] [cursor=pointer]:
+            - /url: ./summer/
+            - img "Play Summer Poker" [ref=e196]
+            - generic [ref=e197]: SummerPoker
+          - link [ref=e198] [cursor=pointer]:
+            - /url: ./fall/
+            - img "Play Fall Poker" [ref=e200]
+            - generic [ref=e201]: FallPoker
+          - link [ref=e202] [cursor=pointer]:
+            - /url: ./winter/
+            - img "Play Winter Poker" [ref=e204]
+            - generic [ref=e205]: WinterPoker
+          - link [ref=e206] [cursor=pointer]:
+            - /url: ./christmas/
+            - img "Play Christmas Poker" [ref=e208]
+            - generic [ref=e209]: ChristmasPoker
+          - link [ref=e210] [cursor=pointer]:
+            - /url: ./easter/
+            - img "Play Easter Poker" [ref=e212]
+            - generic [ref=e213]: EasterPoker
+          - link [ref=e214] [cursor=pointer]:
+            - /url: ./4th-of-july/
+            - img "Play 4th of July Poker" [ref=e216]
+            - generic [ref=e217]: 4th of JulyPoker
+          - link [ref=e218] [cursor=pointer]:
+            - /url: ./halloween/
+            - img "Play Halloween Poker" [ref=e220]
+            - generic [ref=e221]: HalloweenPoker
+          - link [ref=e222] [cursor=pointer]:
+            - /url: ./thanksgiving/
+            - img "Play Thanksgiving Poker" [ref=e224]
+            - generic [ref=e225]: ThanksgivingPoker
+          - link [ref=e226] [cursor=pointer]:
+            - /url: ./new-years/
+            - img "Play New Year's Poker" [ref=e228]
+            - generic [ref=e229]: New Year'sPoker
+          - link [ref=e230] [cursor=pointer]:
+            - /url: ./valentines/
+            - img "Play Valentine Poker" [ref=e232]
+            - generic [ref=e233]: ValentinePoker
+          - link [ref=e234] [cursor=pointer]:
+            - /url: ./st-patricks/
+            - img "Play St. Patrick's Poker" [ref=e236]
+            - generic [ref=e237]: St. Patrick'sPoker
+          - link [ref=e238] [cursor=pointer]:
+            - /url: ./cinco-de-mayo/
+            - img "Play Cinco de Mayo Poker" [ref=e240]
+            - generic [ref=e241]: Cinco de MayoPoker
+      - generic [ref=e242]:
+        - heading "More Games" [level=2] [ref=e243]
+        - generic [ref=e245]:
+          - link "Klondike Solitaire Solitaire" [ref=e246] [cursor=pointer]:
+            - /url: https://www.247solitaire.com
+            - img "Klondike Solitaire" [ref=e247]
+            - generic [ref=e248]: Solitaire
+          - link "Freecell Solitaire Freecell" [ref=e249] [cursor=pointer]:
+            - /url: https://www.247freecell.com
+            - img "Freecell Solitaire" [ref=e250]
+            - generic [ref=e251]: Freecell
+          - link "Mahjong Solitaire Mahjong" [ref=e252] [cursor=pointer]:
+            - /url: https://www.247mahjong.com
+            - img "Mahjong Solitaire" [ref=e254]
+            - generic [ref=e255]: Mahjong
+          - link "Sudoku Game Sudoku" [ref=e256] [cursor=pointer]:
+            - /url: https://www.247sudoku.com
+            - img "Sudoku Game" [ref=e258]
+            - generic [ref=e259]: Sudoku
+          - link "Hearts Card Game Hearts" [ref=e260] [cursor=pointer]:
+            - /url: https://www.247hearts.com
+            - img "Hearts Card Game" [ref=e262]
+            - generic [ref=e263]: Hearts
+          - link "Backgammon Board Game Backgammon" [ref=e264] [cursor=pointer]:
+            - /url: https://www.247backgammon.org
+            - img "Backgammon Board Game" [ref=e266]
+            - generic [ref=e267]: Backgammon
+          - link "Poker Game Poker" [ref=e268] [cursor=pointer]:
+            - /url: https://www.247freepoker.com
+            - img "Poker Game" [ref=e270]
+            - generic [ref=e271]: Poker
+          - link "Slots Casino Game Slots" [ref=e272] [cursor=pointer]:
+            - /url: https://www.247slots.org
+            - img "Slots Casino Game" [ref=e274]
+            - generic [ref=e275]: Slots
+          - link "Checkers Board Game Checkers" [ref=e276] [cursor=pointer]:
+            - /url: https://www.247checkers.com
+            - img "Checkers Board Game" [ref=e278]
+            - generic [ref=e279]: Checkers
+          - link "Spades Card Game Spades" [ref=e280] [cursor=pointer]:
+            - /url: https://www.247spades.com
+            - img "Spades Card Game" [ref=e282]
+            - generic [ref=e283]: Spades
+          - link "Bridge Card Game Bridge" [ref=e284] [cursor=pointer]:
+            - /url: https://www.247bridge.com
+            - img "Bridge Card Game" [ref=e286]
+            - generic [ref=e287]: Bridge
+          - link "Play Roulette Roulette" [ref=e288] [cursor=pointer]:
+            - /url: https://www.247roulette.org
+            - img "Play Roulette" [ref=e290]
+            - generic [ref=e291]: Roulette
+          - link "Free Video Poker Video Poker" [ref=e292] [cursor=pointer]:
+            - /url: https://www.247videopoker.org
+            - img "Free Video Poker" [ref=e294]
+            - generic [ref=e295]: Video Poker
+          - link "Online Blackjack Blackjack" [ref=e296] [cursor=pointer]:
+            - /url: https://www.247blackjack.com
+            - img "Online Blackjack" [ref=e298]
+            - generic [ref=e299]: Blackjack
+          - link "Play Chess Chess" [ref=e300] [cursor=pointer]:
+            - /url: https://www.247chess.com
+            - img "Play Chess" [ref=e302]
+            - generic [ref=e303]: Chess
+          - link "Word Search Game Word Search" [ref=e304] [cursor=pointer]:
+            - /url: https://www.247wordsearch.com
+            - img "Word Search Game" [ref=e306]
+            - generic [ref=e307]: Word Search
+          - link "Online Crossword Game Crossword" [ref=e308] [cursor=pointer]:
+            - /url: https://www.247crossword.com
+            - img "Online Crossword Game" [ref=e310]
+            - generic [ref=e311]: Crossword
+          - link "Wordley Word Game Wordley" [ref=e312] [cursor=pointer]:
+            - /url: https://www.247wordley.com
+            - img "Wordley Word Game" [ref=e314]
+            - generic [ref=e315]: Wordley
+          - link "Online Minesweeper Game Minesweeper" [ref=e316] [cursor=pointer]:
+            - /url: https://www.247minesweeper.com
+            - img "Online Minesweeper Game" [ref=e318]
+            - generic [ref=e319]: Minesweeper
+          - link "Online Pool Game Pool" [ref=e320] [cursor=pointer]:
+            - /url: https://www.247pool.com
+            - img "Online Pool Game" [ref=e322]
+            - generic [ref=e323]: Pool
+          - link "Online Pinball Game Pinball" [ref=e324] [cursor=pointer]:
+            - /url: https://www.247pinball.com
+            - img "Online Pinball Game" [ref=e326]
+            - generic [ref=e327]: Pinball
+          - link "Play Space Rocks Space Rocks" [ref=e328] [cursor=pointer]:
+            - /url: https://www.247spacerocks.com
+            - img "Play Space Rocks" [ref=e329]
+            - generic [ref=e330]: Space Rocks
+          - link "More Games Games" [ref=e331] [cursor=pointer]:
+            - /url: https://www.247games.com
+            - img "More Games" [ref=e333]
+            - generic [ref=e334]: Games
+      - generic [ref=e335]:
+        - heading "Free Poker News" [level=2] [ref=e336]
+        - generic [ref=e338]:
+          - 'link "Unlocking the Mystery of the Poker Straddle: A Guide for Gamers" [ref=e340] [cursor=pointer]':
+            - /url: ./news/unlocking-mystery-poker-straddle-guide/
+          - 'link "Understanding the Full House: A Poker Gamer''s Guide" [ref=e343] [cursor=pointer]':
+            - /url: ./news/understanding-the-full-house-poker-gamers-guide/
+          - 'link "Understanding the Meaning of \"Check\" in Poker: A Guide for Poker Gamers" [ref=e346] [cursor=pointer]':
+            - /url: ./news/understanding-meaning-check-poker-guide/
+          - link "Ultimate Guide to Playing Online Poker with Friends" [ref=e349] [cursor=pointer]:
+            - /url: ./news/ultimate-guide-to-playing-online-poker-with-friends/
+          - 'link "Tips for Winning More Poker Games: Strategies for Success" [ref=e352] [cursor=pointer]':
+            - /url: ./news/tips-for-winning-more-poker-games-strategies-for-success/
+          - 'link "Mastering the Flush: A Poker Player''s Guide" [ref=e355] [cursor=pointer]':
+            - /url: ./news/mastering-the-flush-a-poker-players-guide/
+          - 'link "Mastering the Art of Winning at Poker: Tips for Success" [ref=e358] [cursor=pointer]':
+            - /url: ./news/mastering-the-art-of-winning-at-poker-tips-for-success/
+          - 'link "Mastering the Basics: A Guide on How to Play Poker for Beginners" [ref=e361] [cursor=pointer]':
+            - /url: ./news/mastering-the-basics-how-to-play-poker-for-beginners/
+          - 'link "Mastering the Basics: How to Play 3 Card Poker Like a Pro" [ref=e364] [cursor=pointer]':
+            - /url: ./news/mastering-the-basics-how-to-play-3-card-poker-like-a-pro/
+          - link "Discover the Different Types of Poker Games for Poker Gamers" [ref=e367] [cursor=pointer]:
+            - /url: ./news/discover-the-different-types-of-poker-games-for-poker-gamers/
+          - link "Becoming Victorious At Online Poker" [ref=e370] [cursor=pointer]:
+            - /url: ./news/becoming-victorious-at-online-poker/
+          - link "Enjoying Poker in the Modern World" [ref=e373] [cursor=pointer]:
+            - /url: ./news/enjoying-poker-in-the-modern-world/
+          - link "Following Online Poker Etiquette" [ref=e376] [cursor=pointer]:
+            - /url: ./news/following-online-poker-etiquette/
+          - link "How Can I Improve My Poker Skills?" [ref=e379] [cursor=pointer]:
+            - /url: ./news/how-can-i-improve-my-poker-skills/
+          - link "Be A Winner At Online Poker" [ref=e382] [cursor=pointer]:
+            - /url: ./news/be-a-winner-at-online-poker/
+          - link "Master the Poker" [ref=e385] [cursor=pointer]:
+            - /url: ./news/08-16-13_Master_the_Poker.php
+          - link "Free Poker Popularity" [ref=e388] [cursor=pointer]:
+            - /url: ./news/06-20-13_Free_Poker_Popularity.php
+          - link "New Holdem Games" [ref=e391] [cursor=pointer]:
+            - /url: ./news/03-22-09_New_Holdem_Games.php
+          - link "New Poker Links" [ref=e394] [cursor=pointer]:
+            - /url: ./news/11-22-08_New_Poker_Links.php
+          - link "Poker Police" [ref=e397] [cursor=pointer]:
+            - /url: ./news/11-19-08_Poker_Police.php
+          - link "Tens Or Better Online Poker" [ref=e400] [cursor=pointer]:
+            - /url: ./news/11-18-08_Tens_Or_Better_Online_Poker.php
+          - link "Poker Game Deuces Wild" [ref=e403] [cursor=pointer]:
+            - /url: ./news/11-13-08_Poker_Game_Deuces_Wild.php
+          - link "Free Poker Games" [ref=e406] [cursor=pointer]:
+            - /url: ./news/11-12-08_Free_Poker_Games.php
+          - link "New Site" [ref=e409] [cursor=pointer]:
+            - /url: ./news/11-03-08_New_Site.php
+      - generic [ref=e411]:
+        - heading "Disclaimer" [level=2] [ref=e412]
+        - paragraph [ref=e414]: "DISCLAIMER: The games on this website are using PLAY (fake) money. No payouts will be awarded, there are no \"winnings\", as all games represented by 247 Games LLC are free to play. Play strictly for fun."
+  - contentinfo [ref=e419]:
+    - text: Copyright 24/7 Games LLC
+    - generic [ref=e420]:
+      - link "Privacy & Cookie Settings" [ref=e421] [cursor=pointer]:
+        - /url: javascript:games247.privacy.settings()
+      - link "Privacy Policy" [ref=e422] [cursor=pointer]:
+        - /url: ./privacy-policy.html
+      - link "Cookie Policy" [ref=e423] [cursor=pointer]:
+        - /url: ./cookie-policy.html
+      - link "Do Not Sell My Personal Information" [ref=e424] [cursor=pointer]:
+        - /url: javascript:games247.privacy.optOut()

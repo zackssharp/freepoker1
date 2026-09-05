@@ -21,6 +21,7 @@ export function ActionBar({
   bigBlind,
   pending,
   onAction,
+  classic = false,
 }: {
   legal: LegalActions;
   currentBet: number;
@@ -28,10 +29,12 @@ export function ActionBar({
   bigBlind: number;
   pending: boolean;
   onAction: (action: Action) => void;
+  classic?: boolean;
 }) {
   // The parent remounts this component for each new decision (see the `key` in
   // PokerTable), so the slider starts at the minimum legal raise every time.
   const [target, setTarget] = useState(legal.minRaiseTo);
+  const [sizingOpen, setSizingOpen] = useState(false);
 
   const clamp = useMemo(
     () => (value: number) =>
@@ -43,9 +46,10 @@ export function ActionBar({
   const raiseLabel = legal.isOpen ? "Bet" : "Raise to";
 
   return (
-    <div className="border-border/70 bg-card/80 rounded-2xl border p-3 backdrop-blur sm:p-4">
-      {legal.canRaise && (
-        <div className="mb-3 flex flex-col gap-3">
+    <div className={classic ? "classic-action-bar" : "border-border/70 bg-card/80 rounded-2xl border p-3 backdrop-blur sm:p-4"}>
+      {legal.canRaise && (!classic || sizingOpen) && (
+        <div className={classic ? "classic-sizing" : "mb-3 flex flex-col gap-3"}>
+          {classic && <button type="button" className="classic-sizing-close" onClick={() => setSizingOpen(false)}>Cancel</button>}
           <div className="flex flex-wrap items-center gap-2">
             <span className="text-muted-foreground text-xs font-medium">
               {raiseLabel}
@@ -150,16 +154,18 @@ export function ActionBar({
           type="button"
           size="lg"
           disabled={pending || !legal.canRaise}
-          onClick={() =>
+          aria-expanded={classic ? sizingOpen : undefined}
+          onClick={() => {
+            if (classic && !sizingOpen) { setSizingOpen(true); return; }
             onAction({
               type: legal.isOpen ? "bet" : "raise",
               amount: clamp(target),
-            })
-          }
+            });
+          }}
           className="col-span-2 font-semibold sm:col-span-1"
         >
-          {isShove ? "All in" : raiseLabel}{" "}
-          <span className="font-mono tabular-nums">{formatChips(target)}</span>
+          {classic && !sizingOpen ? (legal.isOpen ? "Bet" : "Raise") : isShove ? "All in" : raiseLabel}{" "}
+          <span className={classic && !sizingOpen ? "sr-only" : "font-mono tabular-nums"}>{formatChips(target)}</span>
         </Button>
       </div>
     </div>

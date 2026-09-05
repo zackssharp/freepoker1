@@ -1,0 +1,246 @@
+[   13764ms] [WARNING] WARNING: CreateJS is using unoptimized hit testing. This may incure a performance hit becuase it allows to pixel testing. @ https://www.247freepoker.com/game/js/game.js?v=1715992068054:0
+[   13779ms] [WARNING] Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently @ https://www.247freepoker.com/game/js/game.js?v=1715992068054:0
+[   14753ms] [WARNING] [GPT] PubAdsService.disableInitialLoad is deprecated, use googletag.setConfig({disableInitialLoad: ...}) instead.
+https://goo.gle/gpt-message#170 @ https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202609010101/pubads_impl.js:18
+[   14936ms] [WARNING] [GPT] Using deprecated googletag.encryptedSignalProviders. Please use googletag.secureSignalProviders instead.
+https://goo.gle/gpt-message#155 @ https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202609010101/pubads_impl.js:18
+[   14959ms] [WARNING] [GPT] Using deprecated googletag.encryptedSignalProviders. Please use googletag.secureSignalProviders instead.
+https://goo.gle/gpt-message#155 @ https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202609010101/pubads_impl.js:18
+[   15001ms] [WARNING] Google Deploy of the SharedId library has been deprecated. Please select another option in the GAM UI. If you use Prebid, we suggest the Prebid.js UserId option. If you do not, you may configure GAM to allow Google to share a first party user identifier with OB and AB participants, which is either the publisherProvidedId or the __gads value when that is missing. @ https://cdn.jsdelivr.net/gh/prebid/shared-id/pubcid.js/docs/pubcid.min.js:0
+[   15439ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://ups.analytics.yahoo.com/ups/58813/fed?gpp_sid=-1&v=1&url=https%3A%2F%2Fwww.247freepoker.com%2F:0
+[   15581ms] [WARNING] fun-hooks: referenced 'registerAdserver' but it was never created @ https://live.primis.tech/content/prebid/prebidVid.10.23.27.min.js:10
+[   16866ms] [WARNING] [GPT] Slot.updateTargetingFromMap is deprecated, use Slot.setConfig({targeting: ...}) instead.
+https://goo.gle/gpt-message#171 @ https://securepubads.g.doubleclick.net/pagead/managed/js/gpt/m202609010101/pubads_impl.js:18
+[   17975ms] [INFO] Powered by AMP ⚡ HTML – Version 2607210106000 https://www.247freepoker.com/ @ https://cdn.ampproject.org/rtv/012607210106000/amp4ads-v0.mjs:1
+[   17990ms] [INFO] Powered by AMP ⚡ HTML – Version 2607210106000 https://www.247freepoker.com/ @ https://cdn.ampproject.org/rtv/012607210106000/amp4ads-v0.mjs:1
+[   31717ms] [ERROR] Failed to load resource: the server responded with a status of 405 () @ https://rtb.nexverse.ai/?usync=1&redir=https%3A%2F%2Flive.primis.tech%2Flive%2FliveCS.php%3Fsource%3Dexternal%26advId%3D179%26advUuid%3D%24%7BUSER_ID%7D:0
+[   42408ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://p.rfihub.com/cm?pub=35683&in=1:0
+[   43763ms] [INFO] --> Start Phase: Setup @ https://www.247freepoker.com/game/js/game.js?v=1715992068054:0
+[   44955ms] [INFO] <- Stop Phase: Setup
+
+ @ https://www.247freepoker.com/game/js/game.js?v=1715992068054:0
+[   44955ms] [INFO] --> Start Phase: NewHand @ https://www.247freepoker.com/game/js/game.js?v=1715992068054:0
+[   45483ms] [INFO] <- Stop Phase: NewHand
+
+ @ https://www.247freepoker.com/game/js/game.js?v=1715992068054:0
+[   45484ms] [INFO] --> Start Phase: Blind @ https://www.247freepoker.com/game/js/game.js?v=1715992068054:0
+[   48526ms] [INFO] <- Stop Phase: Blind
+
+ @ https://www.247freepoker.com/game/js/game.js?v=1715992068054:0
+[   48526ms] [INFO] --> Start Phase: PreflopDeal @ https://www.247freepoker.com/game/js/game.js?v=1715992068054:0
+[   50663ms] [INFO] <- Stop Phase: PreflopDeal
+
+ @ https://www.247freepoker.com/game/js/game.js?v=1715992068054:0
+[   50664ms] [INFO] --> Start Phase: Preflop @ https://www.247freepoker.com/game/js/game.js?v=1715992068054:0
+[   50995ms] [LOG] Measure Player: 4 
+  -------------------- @ https://www.247freepoker.com/game/js/game.js?v=1715992068054:0
+[   75044ms] [WARNING] Mixed Content: The page at 'about:srcdoc' was loaded over HTTPS, but requested an insecure element 'http://pixel.quantcount.com/pixel/p-9fYuixa7g_Hm2.gif?labels=_qc.spend,_qc.image.imp&rtb_id=CTsINAYjC58UEQkwNAYjC58UGDw4f4otdT5DRUyC1BM'. This request was automatically upgraded to HTTPS, For more information see https://blog.chromium.org/2019/10/no-more-mixed-messages-about-https.html @ about:srcdoc:0
+[   75044ms] [WARNING] Mixed Content: The page at 'about:srcdoc' was loaded over HTTPS, but requested an insecure element 'http://content.quantcount.com/adchoices/img/adc.png'. This request was automatically upgraded to HTTPS, For more information see https://blog.chromium.org/2019/10/no-more-mixed-messages-about-https.html @ about:srcdoc:0
+[   75227ms] [WARNING] Mixed Content: The page at 'about:srcdoc' was loaded over HTTPS, but requested an insecure element 'http://pixel.quantserve.com/pixel/p-1RYxePXT9bCS2.gif?&media=ad&p=0.289&r=321360&rand=110063248&labels=_qc.imp,_imp.adserver.rtb,_imp.qccampaign.9090809,_imp.flight.0,_imp.lineitem.0&rtbip=192.184.70.129&rtb_id=CTsINAYjC58UEQkwNAYjC58UGDw4f4otdT5DRUyC1BM&fpan=0&fpa=I0-1792089756-1788567654413&d=247freepoker.com&et=1788567654413&sr=1920x1080x24&tzo=420'. This request was automatically upgraded to HTTPS, For more information see https://blog.chromium.org/2019/10/no-more-mixed-messages-about-https.html @ about:srcdoc:0
+[   75227ms] [ERROR] Mixed Content: The page at 'https://www.247freepoker.com/' was loaded over HTTPS, but requested an insecure stylesheet 'http://content.quantcount.com/adchoices/adchoices.css'. This request has been blocked; the content must be served over HTTPS. @ about:srcdoc:16
+[   75228ms] [WARNING] Mixed Content: The page at 'about:srcdoc' was loaded over HTTPS, but requested an insecure element 'http://pixel.quantcount.com/pixel/p-9fYuixa7g_Hm2.gif?labels=_qc.spend,_qc.image.imp&rtb_id=CTsINAYjC58UEQkwNAYjC58UGDw4f4otdT5DRUyC1BM'. This request was automatically upgraded to HTTPS, For more information see https://blog.chromium.org/2019/10/no-more-mixed-messages-about-https.html @ about:srcdoc:112
+[   75228ms] [WARNING] Mixed Content: The page at 'about:srcdoc' was loaded over HTTPS, but requested an insecure element 'http://content.quantcount.com/adchoices/img/adc.png'. This request was automatically upgraded to HTTPS, For more information see https://blog.chromium.org/2019/10/no-more-mixed-messages-about-https.html @ about:srcdoc:112
+[   75711ms] [INFO] Powered by AMP ⚡ HTML – Version 2607210106000 https://www.247freepoker.com/ @ https://cdn.ampproject.org/rtv/012607210106000/amp4ads-v0.mjs:1
+[   76033ms] [TIMEEND] a: 0.0048828125 ms @ https://static.adsafeprotected.com/sca.17.6.4.js:31
+[   81217ms] [DIR] SyntaxError @ https://cadmus.script.ac/dqwlj5vju67vs/script.js:0
+[   81675ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ https://js.ad-score.com/score.min.js?pid=1000925&tt=g:1
+[   86057ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://ortb.vdo.ai/sync-iframe?sp=NextMillennium-Web-Display&uid={UID}&redir=https%3A%2F%2Fcookies.nextmillmedia.com%2Fsetuid%3Fbidder%3Dvdo_display%26nmuid%3D%26gdpr%3D%26gdpr_consent%3D%26us_privacy%3D%26uid%3D%7Bvdo_uid%7D:0
+[   86057ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://ortb.vdo.ai/sync-iframe?sp=NextMillennium-Web-Display&uid={UID}&redir=https%3A%2F%2Fcookies.nextmillmedia.com%2Fsetuid%3Fbidder%3Dvdo_display%26nmuid%3D%26gdpr%3D%26gdpr_consent%3D%26us_privacy%3D%26uid%3D%7Bvdo_uid%7D:0
+[   86067ms] [ERROR] Failed to load resource: the server responded with a status of 429 () @ https://ortb.vdo.ai/sync-iframe?sp=NextMillennium-Web-Video&uid={UID}&redir=https%3A%2F%2Fcookies.nextmillmedia.com%2Fsetuid%3Fbidder%3Dvdo_video%26nmuid%3D%26gdpr%3D%26gdpr_consent%3D%26us_privacy%3D%26uid%3D%7Bvdo_uid%7D:0
+[   91281ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://cs.admanmedia.com/292deb7c3c2bf25073c04bb900f3a44a.gif??gdpr=&gdpr_consent=&us_privacy=&redir=https%3A%2F%2Fcookies.nextmillmedia.com%2Fsetuid%3Fbidder%3Dadmanmedia%26nmuid%3D%26gdpr%3D%26gdpr_consent%3D%26us_privacy%3D%26uid%3D%5BUID%5D:0
+[   91977ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://csync.loopme.me/?gdpr=0&gdpr_consent=&pubid=11362&redirect=https%3A%2F%2Fcs-server-s2s.yellowblue.io%2Fcs%3Ffwrd%3D1%26aid%3D11571%26id%3D%7Bdevice_id%7D:0
+[   91977ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://csync.loopme.me/?gdpr=0&gdpr_consent=&pubid=11362&redirect=https%3A%2F%2Fcs-server-s2s.yellowblue.io%2Fcs%3Ffwrd%3D1%26aid%3D11571%26id%3D%7Bdevice_id%7D:0
+[   93201ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://cs.iqzone.com/570908b7e92df631fee32098aa272f7b.gif?puid=IWx692qbYHce3%2FuoX5gQSQ%3D%3D&gdpr=&gdpr_consent=&ccpa=&coppa=&redir=https%3A%2F%2Fssc-cms.33across.com%2Fps%2F%3Fxi%3D145%26ts%3D1788567671818.6%26us_privacy%3D%26xu%3D%5BUID%5D%26gpp_sid%3D%26gpp%3D:0
+[   91977ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://csync.loopme.me/?gdpr=0&gdpr_consent=&pubid=11362&redirect=https%3A%2F%2Fcs-server-s2s.yellowblue.io%2Fcs%3Ffwrd%3D1%26aid%3D11571%26id%3D%7Bdevice_id%7D:0
+[   91977ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://csync.loopme.me/?gdpr=0&gdpr_consent=&pubid=11362&redirect=https%3A%2F%2Fcs-server-s2s.yellowblue.io%2Fcs%3Ffwrd%3D1%26aid%3D11571%26id%3D%7Bdevice_id%7D:0
+[   94278ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://csync.loopme.me/?gdpr=0&gdpr_consent=&pubid=11362&redirect=https%3A%2F%2Fcs.yellowblue.io%2Fcs%3Ffwrd%3D1%26aid%3D11571%26id%3D%7Bdevice_id%7D:0
+[   95354ms] [ERROR] Failed to load resource: the server responded with a status of 424 (Failed Dependency) @ https://t.adx.opera.com/pub/sync?pubid=pub10101531197440&gdpr=1&gdpr_consent=:0
+[   95354ms] [ERROR] Failed to load resource: the server responded with a status of 424 (Failed Dependency) @ https://t.adx.opera.com/pub/sync?pubid=pub10101531197440&gdpr=1&gdpr_consent=:0
+[   95354ms] [ERROR] Failed to load resource: the server responded with a status of 424 (Failed Dependency) @ https://t.adx.opera.com/pub/sync?pubid=pub10101531197440&gdpr=1&gdpr_consent=:0
+[   95629ms] [ERROR] Failed to load resource: the server responded with a status of 424 (Failed Dependency) @ https://t.adx.opera.com/pub/sync?pubid=pub10101531197440&gdpr=1&gdpr_consent=:0
+[   95912ms] [ERROR] Failed to load resource: the server responded with a status of 424 (Failed Dependency) @ https://t.adx.opera.com/pub/sync?pubid=pub10101531197440&gdpr=1&gdpr_consent=:0
+[   91977ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://csync.loopme.me/?gdpr=0&gdpr_consent=&pubid=11362&redirect=https%3A%2F%2Fcs-server-s2s.yellowblue.io%2Fcs%3Ffwrd%3D1%26aid%3D11571%26id%3D%7Bdevice_id%7D:0
+[   94278ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://csync.loopme.me/?gdpr=0&gdpr_consent=&pubid=11362&redirect=https%3A%2F%2Fcs.yellowblue.io%2Fcs%3Ffwrd%3D1%26aid%3D11571%26id%3D%7Bdevice_id%7D:0
+[   91977ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://csync.loopme.me/?gdpr=0&gdpr_consent=&pubid=11362&redirect=https%3A%2F%2Fcs-server-s2s.yellowblue.io%2Fcs%3Ffwrd%3D1%26aid%3D11571%26id%3D%7Bdevice_id%7D:0
+[   94278ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://csync.loopme.me/?gdpr=0&gdpr_consent=&pubid=11362&redirect=https%3A%2F%2Fcs.yellowblue.io%2Fcs%3Ffwrd%3D1%26aid%3D11571%26id%3D%7Bdevice_id%7D:0
+[   96754ms] [ERROR] Failed to load resource: net::ERR_TOO_MANY_REDIRECTS @ https://csync.loopme.me/?redirect=https%3A%2F%2Fid5-sync.com%2Fc%2F1095%2F821%2F1%2F9.gif%3Fpuid%3D%7Bdevice_id%7D%26gdpr%3D0%26gdpr_consent%3D:0
+[  102707ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://us4.shb-sync.com/9a618328-5946-41d2-842d-1fa2220a604b.gif?puid=[UID]&redir=https%3A%2F%2Fce.lijit.com%2Fmerge%3Fpid%3D118%263pid%3D%5BUID%5D&gdpr=[GDPR]&gdpr_consent=[GDPR_CONSENT]&ccpa=[CCPA]&gdpr=&gdpr_consent=:0
+[  103872ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://id5-sync.com/k/285.gif?puid=MTNMYT9H-1H-4LNI&gdpr=0:0
+[  104133ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://id5-sync.com/k/285.gif?puid=MTNMYT9H-1H-4LNI&gdpr=0:0
+[  104296ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://tags.bluekai.com/site/2964?id=OnmKnDZx1X2E9A5:0
+[  106310ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://sync.colossusssp.com/pbs.gif?&redir=https%3A%2F%2Fsync.adkernel.com%2Fuser-sync%3Fzone%3D308936%26dsp%3D1061476%26t%3Dimage%26uid%3D%5BUID%5D:0
+[  106310ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://sync.colossusssp.com/pbs.gif?&redir=https%3A%2F%2Fsync.adkernel.com%2Fuser-sync%3Fzone%3D308936%26dsp%3D1061476%26t%3Dimage%26uid%3D%5BUID%5D:0
+[  106446ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://sync.adkernel.com/user-sync?zone=308936&dsp=657779&t=iframe&uid=76d29229-94ba-44b1-bba9-e83ebb100cc6&:0
+[  106836ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://hbx.media.net/cksync.php?bidder=medianet&cs=1&gdpr=0&gdpr_consent=&gpp=%5BGPP%5D&gpp_sid=%5BGPP_SID%5D&ovsid=%7B%7BAPID%7D%7D&redirect=https%3A%2F%2Fcs.yellowblue.io%2Fcs%3Ffwrd%3D1%26aid%3D11585%26id%3D%3Cvsid%3E&type=pbs&us_privacy=%5BUS_PRIVACY%5D:0
+[  108463ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://elb.the-ozone-project.com/setuid?bidder=rubicon&uid=MTNMYT9H-1H-4LNI:0
+[  112602ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://sync.inmobi.com/setuid?bidderID=52&dspUserId=MTNMYT9H-1H-4LNI:0
+[  112856ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://visitor.omnitagjs.com/visitor/sync?uid=3496f2c9155784213a7b528f78bb441a&visitor=MTNMYT9H-1H-4LNI&name=RUBICON:0
+[  113034ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://oxp.mxptint.net/OpenX.ashx?gdpr=0&gdpr_consent=%5BGDPR_CONSENT%5D:0
+[  114705ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://et-c-ash.33across.com/match?bidder_id=30&external_user_id=MTNMYT9H-1H-4LNI&ts=1788567687&gdpr_58=&gdpr=0&gdpr_consent=&us_privacy=:0
+[  123080ms] [ERROR] Failed to load resource: net::ERR_HTTP2_SERVER_REFUSED_STREAM @ https://cs.admanmedia.com/77bb8e39d66271fda1db01d45766b9d9.gif?gdpr=0&gdpr_consent=%5BGDPR_CONSENT%5D&redir=https%3A%2F%2Fcs-server-s2s.yellowblue.io%2Fcs%3Ffwrd%3D1%26aid%3D11559%26id%3D%5BUID%5D:0
+[  123081ms] [ERROR] Failed to load resource: net::ERR_HTTP2_SERVER_REFUSED_STREAM @ https://cs.admanmedia.com/sync/minute_media?gdpr=%5BGDPR%5D&gdpr_consent=%5BUSER_CONSENT%5D&redir=https%3A%2F%2Fcs.minutemedia-prebid.com%2Fcs%3Ffwrd%3D1%26aid%3D21497%26puid%3D%5BUID%5D:0
+[  124841ms] [ERROR] Failed to load resource: net::ERR_HTTP2_SERVER_REFUSED_STREAM @ https://cs.admanmedia.com/77bb8e39d66271fda1db01d45766b9d9.gif?gdpr=0&gdpr_consent=%5BGDPR_CONSENT%5D&redir=https%3A%2F%2Fcs.yellowblue.io%2Fcs%3Ffwrd%3D1%26aid%3D11559%26id%3D%5BUID%5D:0
+[  124883ms] [ERROR] Failed to load resource: net::ERR_HTTP2_SERVER_REFUSED_STREAM @ https://cs.admanmedia.com/73c1e1bfc3bde354d60b80e601ae3914.gif?puid=[UID]&redir=https%3A%2F%2Fonetag-sys.com%2Fmatch%2F%3Fint_id%3D164%26gdpr%3D1%26gdpr_consent%3D%26uid%3D%5BUID%5D&gdpr=1&gdpr_consent=&ccpa=&coppa=:0
+[  124883ms] [ERROR] Failed to load resource: net::ERR_HTTP2_SERVER_REFUSED_STREAM @ https://cs.admanmedia.com/73c1e1bfc3bde354d60b80e601ae3914.gif?puid=[UID]&redir=https%3A%2F%2Fonetag-sys.com%2Fmatch%2F%3Fint_id%3D164%26gdpr%3D0%26gdpr_consent%3D%26uid%3D%5BUID%5D&gdpr=0&gdpr_consent=&ccpa=&coppa=:0
+[  124958ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://dis.criteo.com/dis/usersync.aspx?r=6&p=70&cp=Rubicon&cu=1&url=https%3A%2F%2Fpixel.rubiconproject.com%2Ftap.php%3Fv%3D6434%26nid%3D2149%26put%3D%40%40CRITEO_USERID%40%40:0
+[  125005ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://ad.turn.com/r/cs?pid=6:0
+[  125053ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://rbp.mxptint.net/sn.ashx:0
+[  125180ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://services.digitaleast.mobi/cookie-sync/cookie/v1/exchange-to-de-match/rubicon.gif:0
+[  125396ms] [ERROR] Failed to load resource: net::ERR_HTTP2_SERVER_REFUSED_STREAM @ https://cs.admanmedia.com/73c1e1bfc3bde354d60b80e601ae3914.gif?puid=[UID]&redir=https%3A%2F%2Fonetag-sys.com%2Fmatch%2F%3Fint_id%3D164%26gdpr%3D1%26gdpr_consent%3D%26uid%3D%5BUID%5D&gdpr=1&gdpr_consent=&ccpa=&coppa=:0
+[  125398ms] [ERROR] Failed to load resource: net::ERR_HTTP2_SERVER_REFUSED_STREAM @ https://cs.admanmedia.com/73c1e1bfc3bde354d60b80e601ae3914.gif?puid=[UID]&redir=https%3A%2F%2Fonetag-sys.com%2Fmatch%2F%3Fint_id%3D164%26gdpr%3D1%26gdpr_consent%3D%26uid%3D%5BUID%5D&gdpr=1&gdpr_consent=&ccpa=&coppa=:0
+[  136162ms] [ERROR] Mixed Content: The page at 'https://www.247freepoker.com/' was loaded over HTTPS, but requested an insecure script 'http://ghent-gce-or.bidswitch.net/imp/2.1724/BSWhttp_A_B_Ba2.adform.net_Badfscript_B_Cbn_R86948689_Qrtbwp_R_I_WAUCTION__PRICE_X-iqVwWoyhyK6dOF5JXkBig2JDeqAy1wHu0_Qrtbdata_ReNeUijKFRxv__vy8xY-MdLVI9QRvFkIfrkpGgRr43GeGqck59cmxrmcSXQLcSm-fdxXNMCAu9W7We1BJFbUGgfyLwSE2qD__GYqhCFsvsJXX6StRSJFVq6BoYO3K-R8DeAGD5zUwyhYQsBMqYCaHcyxzV7ou3ImuHo6EXsRgpo____osCkaAZaB5JHTOoAJ-F8RWAnSocP9vpOLjzNE-X2Kl4fIsXIBVYJJt8zaPjpeF7C3rctmiX87A8r9f4w9jYCUhTLdj39aAmQ6eTlIajwtNw3qHErXTSwrLEt1x6nnSMLga1e9SBDgZXEtWx__Z9kHOMAk7mLz5xGOyX0E...3hhkaw_-xUVoTJGuZOFfuojFiD3v0h3ligjeV6-Z7uJgmObAQUa6pmplFryy2TM9C_tDrOpYF7BkW9Yyvm99w5lSk2La5jzdQ_LHe0ew7Zt1WWCX6ZdnX7-RgkY7JMEqGXp2T6A0jsP_KnGTAcx5ZNeRuS6jnj3sYUyxjT9PEhpJP8YuaGBEXJyMFr07UUJYrqI4owP8DDsP2d4jEiQrRf_Bvndv03CdnOZx964zeVKM5MZJexFLvEK61M1nR55yevuiEUKIuNQciPWEzE6MLZGJHZvkGA7hOYQx08LdlU_T_0llcxVoVst45PIYEdnpeQW0voJJt4zBUe4GnpVWZKcTEXvElU3TzwVvhbm4HN1a0E-p4N-aFLGzi7VQX-tNyIGZ1O5MzmQeu0HBWxu7xYISNLfL783xVKo5MORTN1p1y2OfhNlz_eM1xCQKxCefgMvwLsS5HZ45ZCRaLEWwtsmV21J20HijMKeIZFpxvXA5zTL5S-YZsDrFsb7r0/'. This request has been blocked; the content must be served over HTTPS. @ about:srcdoc:0
+[  136395ms] [ERROR] Failed to load resource: the server responded with a status of 451 () @ https://pippio.com/api/sync?pid=710914&_=2&it=4&iv=06a7056f46a8fd0977cdf6b954111110&it=4&it=4&gdpr=0:0
+[  136395ms] [ERROR] Failed to load resource: the server responded with a status of 451 () @ https://pippio.com/api/sync?pid=710914&_=2&it=4&iv=06a7056f46a8fd0977cdf6b954111110&it=4&it=4&gdpr=0:0
+[  104133ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://id5-sync.com/k/285.gif?puid=MTNMYT9H-1H-4LNI&gdpr=0:0
+[  113034ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://oxp.mxptint.net/OpenX.ashx?gdpr=0&gdpr_consent=%5BGDPR_CONSENT%5D:0
+[  191164ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://px.owneriq.net/eox:0
+[  191361ms] [DIR] SyntaxError @ https://js.ad-score.com/score.min.js?pid=1000925&tt=g:1
+[  191433ms] [TIMEEND] a: 0.0009765625 ms @ https://static.adsafeprotected.com/sca.17.6.4.js:31
+[  191654ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ https://js.ad-score.com/score.min.js?pid=1000925&tt=g:1
+[  250580ms] [DIR] SyntaxError @ https://js.ad-score.com/score.min.js?pid=1000925&tt=g:1
+[  104133ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://id5-sync.com/k/285.gif?puid=MTNMYT9H-1H-4LNI&gdpr=0:0
+[  113034ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://oxp.mxptint.net/OpenX.ashx?gdpr=0&gdpr_consent=%5BGDPR_CONSENT%5D:0
+[  191164ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://px.owneriq.net/eox:0
+[  251035ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ https://js.ad-score.com/score.min.js?pid=1000925&tt=g:1
+[  251078ms] [TIMEEND] a: 0.001953125 ms @ https://static.adsafeprotected.com/sca.17.6.4.js:31
+[  254884ms] [ERROR] Failed to load resource: the server responded with a status of 400 () @ https://eb2.3lift.com/getuid?gdpr=&gdpr_consent=&redir=https%3A%2F%2Fuser-sync.fwmrm.net%2Fad%2Fu%3Fmode%3Duser-register%26dspid%3D94%26dspuid%3D$UID%26gdpr%3D%26gdpr_consent%3D:0
+[  104133ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://id5-sync.com/k/285.gif?puid=MTNMYT9H-1H-4LNI&gdpr=0:0
+[  113034ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://oxp.mxptint.net/OpenX.ashx?gdpr=0&gdpr_consent=%5BGDPR_CONSENT%5D:0
+[  191164ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://px.owneriq.net/eox:0
+[  307864ms] [TIMEEND] a: 0.001953125 ms @ https://static.adsafeprotected.com/sca.17.6.4.js:31
+[  308652ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://cs.iqzone.com/6f0476ca45e1d6b67e3ee8d57532a022.gif?redir=https%3A%2F%2Fsync.cootlogix.com%2Fapi%2Fcookie%3FpartnerId%3Diqzone%26gdpr%3D%26gdpr_consent%3D%26us_privacy%3D%26userId%3D%5BUID%5D&gdpr=&gdpr_consent=&ccpa=:0
+[  365847ms] [WARNING] Unrecognized feature: 'attribution-reporting'. @ https://www.googletagservices.com/dcm/impl_v106.js:110
+[  365860ms] [WARNING] Unrecognized feature: 'attribution-reporting'. @ https://www.googletagservices.com/dcm/impl_v106.js:110
+[  365870ms] [WARNING] Unrecognized feature: 'attribution-reporting'. @ https://www.googletagservices.com/dcm/impl_v106.js:110
+[  365847ms] [WARNING] Unrecognized feature: 'attribution-reporting'. @ https://www.googletagservices.com/dcm/impl_v106.js:110
+[  365860ms] [WARNING] Unrecognized feature: 'attribution-reporting'. @ https://www.googletagservices.com/dcm/impl_v106.js:110
+[  365870ms] [WARNING] Unrecognized feature: 'attribution-reporting'. @ https://www.googletagservices.com/dcm/impl_v106.js:110
+[  366124ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://x.bidswitch.net/sync?dsp_id=437&ssp=wordpress&user_id=:0
+[  366618ms] [TIMEEND] a: 0.009033203125 ms @ https://static.adsafeprotected.com/sca.17.6.4.js:31
+[  366624ms] [TIMEEND] a: 0.002197265625 ms @ https://static.adsafeprotected.com/sca.17.6.4.js:31
+[  366646ms] [TIMEEND] a: 0.001953125 ms @ https://static.adsafeprotected.com/sca.17.6.4.js:31
+[  367130ms] [TIMEEND] a: 0.001953125 ms @ https://static.adsafeprotected.com/sca.17.6.4.js:31
+[  370772ms] [ERROR] Access to fetch at 'https://onetag-sys.com/analytics/' from origin 'https://www.247freepoker.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ about:srcdoc:0
+[  370772ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://onetag-sys.com/analytics/:0
+[  370773ms] Uncaught (in promise) TypeError: Failed to fetch
+    at sendWithFetch (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:100883)
+    at sendInternal (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:100595)
+    at onLoad (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:100441)
+    at send (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:100390)
+    at post (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:102115)
+    at log (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:16776)
+    at <anonymous> (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:15862)
+    at o (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:14742)
+[  365847ms] [WARNING] Unrecognized feature: 'attribution-reporting'. @ https://www.googletagservices.com/dcm/impl_v106.js:110
+[  365860ms] [WARNING] Unrecognized feature: 'attribution-reporting'. @ https://www.googletagservices.com/dcm/impl_v106.js:110
+[  365870ms] [WARNING] Unrecognized feature: 'attribution-reporting'. @ https://www.googletagservices.com/dcm/impl_v106.js:110
+[  366124ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://x.bidswitch.net/sync?dsp_id=437&ssp=wordpress&user_id=:0
+[  365847ms] [WARNING] Unrecognized feature: 'attribution-reporting'. @ https://www.googletagservices.com/dcm/impl_v106.js:110
+[  365860ms] [WARNING] Unrecognized feature: 'attribution-reporting'. @ https://www.googletagservices.com/dcm/impl_v106.js:110
+[  365870ms] [WARNING] Unrecognized feature: 'attribution-reporting'. @ https://www.googletagservices.com/dcm/impl_v106.js:110
+[  366124ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://x.bidswitch.net/sync?dsp_id=437&ssp=wordpress&user_id=:0
+[  381805ms] ReferenceError: onetag is not defined
+    at https://serv-us-1.onetag-sys.com/invocation/?key=2e85549d-1e71-4f08-9f69-eb54abcdfa2e&ad_type=banner:1:190
+[  384244ms] [ERROR] Failed to load resource: the server responded with a status of 400 (Bad Request) @ https://sync.adkernel.com/user-sync?dsp=3&t=image&uid=30b40dba-c246-4e5e-81ba-ec15d7505881:0
+[  396731ms] [ERROR] Access to fetch at 'https://onetag-sys.com/analytics/' from origin 'https://serv-us-1.onetag-sys.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://serv-us-1.onetag-sys.com/invocation/?key=6c1a5b17-4f2f-428e-8aeb-ef606ef30f95&ad_type=banner:0
+[  396732ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://onetag-sys.com/analytics/:0
+[  396732ms] Uncaught (in promise) TypeError: Failed to fetch
+    at sendWithFetch (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:5230)
+    at sendInternal (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:4942)
+    at onLoad (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:4789)
+    at send (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:4738)
+    at post (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:6461)
+    at log (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:15295)
+    at <anonymous> (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:14381)
+    at o (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:13261)
+[  409086ms] [ERROR] Access to fetch at 'https://onetag-sys.com/analytics/' from origin 'https://serv-us-1.onetag-sys.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://serv-us-1.onetag-sys.com/invocation/?key=8c941be6-c57d-43e7-81d2-30b3dab2d221&ad_type=banner:0
+[  409086ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://onetag-sys.com/analytics/:0
+[  409086ms] Uncaught (in promise) TypeError: Failed to fetch
+    at sendWithFetch (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:100883)
+    at sendInternal (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:100595)
+    at onLoad (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:100441)
+    at send (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:100390)
+    at post (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:102115)
+    at log (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:16776)
+    at <anonymous> (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:15862)
+    at o (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:14742)
+[  414086ms] [ERROR] Access to fetch at 'https://onetag-sys.com/analytics/' from origin 'https://serv-us-1.onetag-sys.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://serv-us-1.onetag-sys.com/invocation/?key=8c941be6-c57d-43e7-81d2-30b3dab2d221&ad_type=banner:0
+[  414086ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://onetag-sys.com/analytics/:0
+[  414086ms] Uncaught (in promise) TypeError: Failed to fetch
+    at sendWithFetch (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:100883)
+    at sendInternal (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:100595)
+    at onLoad (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:100441)
+    at send (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:100390)
+    at post (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:102115)
+    at log (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:16776)
+    at <anonymous> (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:15862)
+    at o (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:14742)
+[  104133ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://id5-sync.com/k/285.gif?puid=MTNMYT9H-1H-4LNI&gdpr=0:0
+[  113034ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_TIMED_OUT @ https://oxp.mxptint.net/OpenX.ashx?gdpr=0&gdpr_consent=%5BGDPR_CONSENT%5D:0
+[  191164ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://px.owneriq.net/eox:0
+[  308652ms] [ERROR] Failed to load resource: net::ERR_NAME_NOT_RESOLVED @ https://cs.iqzone.com/6f0476ca45e1d6b67e3ee8d57532a022.gif?redir=https%3A%2F%2Fsync.cootlogix.com%2Fapi%2Fcookie%3FpartnerId%3Diqzone%26gdpr%3D%26gdpr_consent%3D%26us_privacy%3D%26userId%3D%5BUID%5D&gdpr=&gdpr_consent=&ccpa=:0
+[  420195ms] [DIR] SyntaxError @ https://js.ad-score.com/score.min.js?pid=1000925&tt=g:1
+[  420345ms] [TIMEEND] a: 0.001953125 ms @ https://static.adsafeprotected.com/sca.17.6.4.js:31
+[  420620ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ https://js.ad-score.com/score.min.js?pid=1000925&tt=g:1
+[  445891ms] [ERROR] Access to fetch at 'https://onetag-sys.com/analytics/' from origin 'https://serv-us-1.onetag-sys.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://serv-us-1.onetag-sys.com/invocation/?key=57e3c36a-b8ea-4ea5-93ae-ee4d7f5ffb27&ad_type=banner:0
+[  445891ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://onetag-sys.com/analytics/:0
+[  445891ms] Uncaught (in promise) TypeError: Failed to fetch
+    at sendWithFetch (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:5230)
+    at sendInternal (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:4942)
+    at onLoad (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:4789)
+    at send (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:4738)
+    at post (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:6461)
+    at log (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:15295)
+    at <anonymous> (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:14381)
+    at o (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:13261)
+[  474206ms] [ERROR] Access to fetch at 'https://onetag-sys.com/analytics/' from origin 'https://serv-us-1.onetag-sys.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://serv-us-1.onetag-sys.com/invocation/?key=8c941be6-c57d-43e7-81d2-30b3dab2d221&ad_type=banner:0
+[  474206ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://onetag-sys.com/analytics/:0
+[  474208ms] Uncaught (in promise) TypeError: Failed to fetch
+    at sendWithFetch (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:100883)
+    at sendInternal (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:100595)
+    at onLoad (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:100441)
+    at send (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:100390)
+    at post (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:102115)
+    at log (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:16776)
+    at <anonymous> (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:15862)
+    at o (https://onetag-sys.com/static/VideoAdBannerPlacement.js?v=1.1.66:0:14742)
+[  478192ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://static.admaster.cc/js/admaster/cookieSync.html?tn=2ce2e6e33746b4224011d22068a89c02&c_sync=1:0
+[  648805ms] [TIMEEND] a: 0.006103515625 ms @ https://static.adsafeprotected.com/sca.17.6.4.js:31
+[  649036ms] [DIR] SyntaxError @ https://js.ad-score.com/score.min.js?pid=1000925&tt=g:1
+[  649317ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ https://js.ad-score.com/score.min.js?pid=1000925&tt=g:1
+[  649317ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ https://js.ad-score.com/score.min.js?pid=1000925&tt=g:1
+[  649725ms] Failed to read a named property 'document' from 'Window': Blocked a frame with origin "https://onetag-sys.com" from accessing a frame with origin "https://www.247freepoker.com". Protocols, domains, and ports must match.
+[  649317ms] [WARNING] The powerPreference option is currently ignored when calling requestAdapter() on Windows. See https://crbug.com/369219127 @ https://js.ad-score.com/score.min.js?pid=1000925&tt=g:1
+[  651618ms] [TIMEEND] a: 0.0009765625 ms @ https://static.adsafeprotected.com/sca.17.6.4.js:31
+[  652188ms] [ERROR] Access to fetch at 'https://onetag-sys.com/analytics/' from origin 'https://serv-us-1.onetag-sys.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://serv-us-1.onetag-sys.com/invocation/?key=ccc4f098-5b8e-4290-8edd-83cbb0496f9a&ad_type=banner:0
+[  652190ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://onetag-sys.com/analytics/:0
+[  652190ms] Uncaught (in promise) TypeError: Failed to fetch
+    at sendWithFetch (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:5230)
+    at sendInternal (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:4942)
+    at onLoad (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:4789)
+    at send (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:4738)
+    at post (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:6461)
+    at log (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:15295)
+    at <anonymous> (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:14125)
+[  742267ms] [ERROR] Access to fetch at 'https://onetag-sys.com/analytics/' from origin 'https://serv-us-1.onetag-sys.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ https://serv-us-1.onetag-sys.com/invocation/?key=ccc4f098-5b8e-4290-8edd-83cbb0496f9a&ad_type=banner:0
+[  742267ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://onetag-sys.com/analytics/:0
+[  742266ms] Uncaught (in promise) TypeError: Failed to fetch
+    at sendWithFetch (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:5230)
+    at sendInternal (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:4942)
+    at onLoad (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:4789)
+    at send (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:4738)
+    at post (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:6461)
+    at log (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:15295)
+    at <anonymous> (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:14381)
+    at o (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:13261)
+[  743384ms] [ERROR] Access to fetch at 'https://onetag-sys.com/analytics/' from origin 'https://www.247freepoker.com' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ about:srcdoc:0
+[  743385ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://onetag-sys.com/analytics/:0
+[  743384ms] Uncaught (in promise) TypeError: Failed to fetch
+    at sendWithFetch (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:5230)
+    at sendInternal (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:4942)
+    at onLoad (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:4789)
+    at send (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:4738)
+    at post (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:6461)
+    at log (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:15295)
+    at <anonymous> (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:14381)
+    at o (https://onetag-sys.com/static/BannerAdBannerPlacement.js?v=0.4.54:0:13261)
