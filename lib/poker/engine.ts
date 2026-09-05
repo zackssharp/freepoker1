@@ -106,6 +106,8 @@ export interface TableState {
   bigBlindSeatId: string | null;
   phase: TablePhase;
   log: LogEntry[];
+  /** Monotonic counter behind log ids, which stay unique as the log is trimmed. */
+  logSeq: number;
   lastHand: HandSummary | null;
 }
 
@@ -187,8 +189,14 @@ function totalPot(state: TableState): number {
 }
 
 function log(state: TableState, text: string): void {
+  // `log.length` stops growing once the log is capped, so it cannot be the id:
+  // every entry after the cap would collide and React would reuse the wrong
+  // row. `?? state.log.length` picks up states persisted before this counter.
+  const seq = (state.logSeq ?? state.log.length) + 1;
+  state.logSeq = seq;
+
   state.log.push({
-    id: `${state.handNumber}:${state.log.length}`,
+    id: `${state.handNumber}:${seq}`,
     handNumber: state.handNumber,
     street: state.street,
     text,
@@ -243,6 +251,7 @@ export function createTable(config: TableConfig): TableState {
     bigBlindSeatId: null,
     phase: "idle",
     log: [],
+    logSeq: 0,
     lastHand: null,
   };
 }
@@ -355,7 +364,10 @@ export function legalActions(state: TableState): LegalActions | null {
   const toCall = Math.max(0, state.currentBet - seat.committed);
   const callAmount = Math.min(toCall, seat.stack);
   const maxRaiseTo = seat.committed + seat.stack;
-  const canRaise = seat.stack > toCall;
+  // A full-sized raise clears `hasActed` for everyone else, so a seat that is
+  // asked to act again while still flagged as having acted is facing nothing
+  // but a short all-in. That does not reopen the betting: call or fold only.
+  const canRaise = seat.stack > toCall && !seat.hasActed;
   const minRaiseTo = Math.min(state.currentBet + state.minRaise, maxRaiseTo);
 
   return {
@@ -429,7 +441,11 @@ export function applyAction(
     case "bet":
     case "raise": {
       if (!options.canRaise) {
-        throw new IllegalActionError(`${seat.name} cannot raise`);
+        throw new IllegalActionError(
+          seat.hasActed && options.toCall > 0
+            ? `${seat.name} cannot raise; a short all-in does not reopen the betting`
+            : `${seat.name} cannot raise`,
+        );
       }
       const target = Math.floor(action.amount ?? 0);
       if (!Number.isFinite(target)) {
@@ -581,6 +597,10 @@ function dealTo(state: TableState, street: Street): void {
   log(state, `${streetName}: ${dealt.map(formatCard).join(" ")}`);
 }
 
+function sameSeats(a: readonly string[], b: readonly string[]): boolean {
+  return a.length === b.length && a.every((id, index) => id === b[index]);
+}
+
 /**
  * Splits the hand's chips into a main pot plus one side pot per all-in level.
  * Money at a level nobody is eligible for rolls forward into the next pot.
@@ -612,7 +632,14 @@ export function buildPots(seats: readonly Seat[]): Pot[] {
       .map((seat) => seat.id);
 
     if (amount > 0 && eligibleSeatIds.length > 0) {
-      pots.push({ amount, eligibleSeatIds });
+      // Consecutive levels contested by exactly the same seats are one pot;
+      // splitting them would pay the same winner twice for a single pot.
+      const previous = pots[pots.length - 1];
+      if (previous && sameSeats(previous.eligibleSeatIds, eligibleSeatIds)) {
+        previous.amount += amount;
+      } else {
+        pots.push({ amount, eligibleSeatIds });
+      }
     } else {
       carried = amount;
     }
@@ -627,7 +654,37 @@ export function buildPots(seats: readonly Seat[]): Pot[] {
   return pots;
 }
 
+/**
+ * Hands back the top bettor's chips that nobody was ever able to match -- an
+ * over-bet against a shorter stack, or a bet everyone folded to. Without this
+ * they would be paid back out as if they had been won, so the log, the pot
+ * size and the recorded stats would all credit chips that were never at risk.
+ */
+function returnUncalledBet(state: TableState): void {
+  const amounts = state.seats
+    .map((seat) => seat.totalCommitted)
+    .sort((a, b) => b - a);
+
+  const highest = amounts[0] ?? 0;
+  const second = amounts[1] ?? 0;
+  if (highest <= 0 || highest <= second) return;
+
+  // `highest > second` makes the top contributor unique.
+  const seat = state.seats.find((candidate) => candidate.totalCommitted === highest);
+  if (!seat) return;
+
+  const refund = highest - second;
+  seat.totalCommitted -= refund;
+  seat.stack += refund;
+  // Betting past everyone else's stack does not leave you all in.
+  if (seat.status === "all-in" && seat.stack > 0) seat.status = "active";
+
+  log(state, `${seat.name} takes back the uncalled ${refund}`);
+}
+
 function completeHand(state: TableState, wentToShowdown: boolean): void {
+  returnUncalledBet(state);
+
   const potTotal = totalPot(state);
   const pots = buildPots(state.seats);
   const live = state.seats.filter(isLive);
